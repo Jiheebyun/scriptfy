@@ -17,7 +17,6 @@ export const MainPage = () => {
                 {/* bottom section place */}
                 <section></section>
             </div>
-
         </div>
     ) 
 }
