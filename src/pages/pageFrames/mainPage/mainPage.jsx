@@ -1,6 +1,7 @@
 import React from "react";
 
-
+import { BottomSection } from "../../components/bottomSection/bottomSection";
+import { TopNavBar } from "../../components/topNavBar/topNavBar";
 
 
 
