@@ -10,7 +10,7 @@ export const MainPage = () => {
 
 
     return (
-        <div>
+        <div className="mainFrame">
             <div>
                 {/*  navbar place */}
                 <div> </div>
