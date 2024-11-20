@@ -13,7 +13,7 @@ export const MainPage = () => {
         <div className="mainFrame">
             <div>
                 {/*  navbar place */}
-                <div> </div>
+                <TopNavBar></TopNavBar>
                 {/* section place */}
                 <section> </section>
                 {/* bottom section place */}
