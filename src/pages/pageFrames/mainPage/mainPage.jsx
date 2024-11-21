@@ -1,6 +1,6 @@
 import React from "react";
 
-import './mainPage.sass'
+import './mainPage.scss'
 import { BottomSection } from "../../components/bottomSection/bottomSection";
 import { TopNavBar } from "../../components/topNavBar/topNavBar";
 

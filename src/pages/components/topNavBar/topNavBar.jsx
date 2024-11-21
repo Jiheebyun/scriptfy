@@ -1,6 +1,6 @@
 import React from "react";
 
-import './topNavBar.sass'
+import './topNavBar.scss'
 
 
 export const TopNavBar = () => {
