@@ -7,7 +7,7 @@
   
     .layout-topbar-news {
       height: 30px;
-      width: 100%;
+      width: auto;
       background: black;
       display: flex;
       flex-direction: center;
@@ -15,12 +15,23 @@
       .news{
         width: 30%;
         background-color: yellow;
+        padding: 0 2rem;
       }
     }
 
     .layout-top-bar{
-      height: auto;
-      width: 100%;
+      height: 100%;
+      width: auto;
       background-color: #9073ce;
+      padding: 0 4rem;
+      display: flex;
+      flex-direction: center;
+      justify-content: center;
+      .top-menu{
+        width: 80%;
+        height: 100%;
+        background-color: #222222;
+        padding: 0 4rem;
+      }
     }
 }
