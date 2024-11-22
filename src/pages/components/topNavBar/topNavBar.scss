@@ -9,5 +9,18 @@
       height: 30px;
       width: 100%;
       background: black;
+      display: flex;
+      flex-direction: center;
+      justify-content: center;
+      .news{
+        width: 30%;
+        background-color: yellow;
+      }
+    }
+
+    .layout-top-bar{
+      height: auto;
+      width: 100%;
+      background-color: #9073ce;
     }
 }
