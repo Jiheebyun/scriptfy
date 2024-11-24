@@ -20,7 +20,7 @@
     }
 
     .layout-top-bar{
-      height: 100%;
+      height: auto;
       width: auto;
       background-color: #9073ce;
       padding: 0 4rem;
@@ -34,4 +34,12 @@
         padding: 0 4rem;
       }
     }
+}
+
+@media screen and (min-width: 1660px) {
+  .top-nav-bar {
+      width: 1504px ;
+      margin-left: auto ;
+      margin-right: auto ;
+  }
 }
