@@ -16,7 +16,12 @@ export const TopNavBar = () => {
             </div>
             <div className="layout-top-bar">
                 <div className="top-menu">
+                    <div className="logo-container">
 
+                    </div>
+                    <div className="icons-container">
+
+                    </div>
                 </div>
             </div>
         </div>
