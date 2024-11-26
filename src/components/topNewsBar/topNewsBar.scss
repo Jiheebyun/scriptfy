@@ -1,0 +1,19 @@
+
+
+.layout-topbar-news {
+    height: 30px;
+    width: 100%; 
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    .news{
+      width: 350px;
+      height: 100%;
+      background-color: yellow;
+      padding: 0 2rem;
+    }
+  }

@@ -1,8 +1,9 @@
 import React from "react";
 
 import './mainPage.scss'
-import { BottomSection } from "../../components/bottomSection/bottomSection";
-import { TopNavBar } from "../../components/topNavBar/topNavBar";
+import { BottomSection } from "../../../components/bottomSection/bottomSection";
+import { TopNavBar } from "../../../components/topNavBar/topNavBar";
+import { TopNewsBar } from "../../../components/topNewsBar/topNewsBar";
 
 
 
@@ -11,8 +12,8 @@ export const MainPage = () => {
 
     return (
         <div className="mainFrame">
-            <div>
-                {/*  navbar place */}
+            <div className="main-container">
+                <TopNewsBar></TopNewsBar>
                 <TopNavBar></TopNavBar>
                 {/* section place */}
                 <section> </section>
