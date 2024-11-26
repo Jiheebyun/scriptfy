@@ -1,6 +1,6 @@
 import React from "react";
 
-
+import './topNewsBar.scss'
 
 
 export const TopNewsBar = () => {

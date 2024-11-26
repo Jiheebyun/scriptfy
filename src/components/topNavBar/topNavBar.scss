@@ -1,7 +1,7 @@
 
 
 .top-nav-bar {
-    height: 85px;
+    height: 55px;
     width: 100%;
     background: gray;
   
@@ -23,6 +23,8 @@
     .layout-top-bar{
       height: 55px;
       width: auto;
+      top: 30px;
+      position: relative;
       background-color: #f9f9f9;
       padding: 0 4rem;
       display: flex;
