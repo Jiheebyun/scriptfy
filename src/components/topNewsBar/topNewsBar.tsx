@@ -9,8 +9,7 @@ export const TopNewsBar = () => {
     return (
         <div className="layout-topbar-news">
             <div className="news">
-                {/* place of text */}
-                {/* place of a tag to close */}
+               <span>Figma UI Kit v3 is out!</span><a>Learn More</a>
             </div>
         </div>
 
