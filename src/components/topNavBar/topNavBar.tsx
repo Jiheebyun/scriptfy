@@ -22,7 +22,9 @@ export const TopNavBar = () => {
                                 <IoSearch href=""/>
                             </li>
                             <li>
-                                <FaGithub href="https://github.com/Jiheebyun"/>
+                                <a href="https://github.com/Jiheebyun" target="_blank" rel="noopener noreferrer">
+                                <FaGithub/>
+                                </a>
                             </li>
                             <li>
                                 <FaRegUser className=""/>
