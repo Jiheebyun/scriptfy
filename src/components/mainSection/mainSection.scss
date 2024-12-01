@@ -1,4 +1,4 @@
-
+@import '../../styles/colors.scss';
 
 .section-layout{
     width:  100%;
@@ -24,6 +24,14 @@
     }
 }
 
+.section-content-container{
+    .content-title{
+        font-size: 30px;
+        span {
+            color: $primary-color;
+        }
+    }
+}
 
 @media (max-width: 1200px) {
     .section-container {
