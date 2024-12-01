@@ -1,9 +1,33 @@
 
 
 .section-layout{
-    width: 100%;
+    width:  100%;
     height: 100%;
     padding-left: 5rem;
     padding-right: 5rem;
-    background-color: #222222;
+    background-color: #ededed;
+}
+
+.section-container{
+    display: flex; 
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+    div{
+        flex: 1; 
+        background-color: #e0e0e0;
+        padding: 2rem;
+        text-align: center;
+        border: 1px solid #ccc;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .section-container {
+        flex-direction: column; 
+        div {
+            width: 100%; 
+        }
+    }
 }
