@@ -11,9 +11,10 @@
 }
 
 .section-container{
+    height: 900px; // 지워야함
     display: flex; 
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
     div{
         flex: 1; 
@@ -27,8 +28,37 @@
 .section-content-container{
     .content-title{
         font-size: 30px;
+        margin-bottom: 15px;
         span {
             color: $primary-color;
+        }
+    }
+    .section-content-button-container{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+        padding: 0px;
+        border: solid 0;
+        margin-top: 30px;
+        .get-started-btn{
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+            border-color: $primary-color;
+            background-color: $primary-color;
+            &:hover{
+                background-color: $hovered-color;
+            }
+        }
+        .give-btn{
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            border: $primary-color;
         }
     }
 }

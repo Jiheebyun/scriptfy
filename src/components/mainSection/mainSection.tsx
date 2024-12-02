@@ -13,6 +13,10 @@ export const MainSection = () => {
                     <p>
                         Elevate your web applications with PrimeReact's comprehensive suite of customizable, feature-rich UI components. With PrimeReact, turning your development vision into reality has never been easier.  
                     </p>
+                    <div className="section-content-button-container">
+                        <button className="get-started-btn">Get Started</button>
+                        <button className="give-btn">Give a Star</button>
+                    </div>
                 </div>
                 <div className="section-example-container">
 
