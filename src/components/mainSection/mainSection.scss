@@ -29,8 +29,13 @@
     .content-title{
         font-size: 30px;
         margin-bottom: 15px;
+        display: flex;
+        justify-content: start;
         span {
             color: $primary-color;
+        }
+        p {
+            margin: 0;
         }
     }
     .section-content-button-container{
@@ -50,8 +55,11 @@
             font-weight: 500;
             border-color: $primary-color;
             background-color: $primary-color;
+            box-shadow: none; 
+            transition: color 0.5s ease, background-color 0.5s ease;
             &:hover{
-                background-color: $hovered-color;
+                background-color: $hovered-color; 
+                border-color: $hovered-color;
             }
         }
         .give-btn{
@@ -59,6 +67,10 @@
             height: 50px;
             border-radius: 10px;
             border: $primary-color;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            &:hover{
+                background-color: $hovered-color;
+            }
         }
     }
 }
