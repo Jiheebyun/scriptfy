@@ -10,6 +10,8 @@
     - 
 ## 파일 구조 
 
+<details>
+
 /my-ui-library
 │
 ├── /dist                         # 빌드된 파일 (배포용)
@@ -84,3 +86,5 @@
 ├── tsconfig.json
 ├── README.md                   # GitHub 문서
 └── .gitignore
+
+</details>
