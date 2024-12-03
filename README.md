@@ -11,6 +11,10 @@
 ## 파일 구조 
 
 <details>
+  <summary>프로토타입 상속: Prototypical Inheritance</summary>
+
+
+```javascript
 
 /my-ui-library
 │
@@ -86,5 +90,5 @@
 ├── tsconfig.json
 ├── README.md                   # GitHub 문서
 └── .gitignore
-
+```
 </details>
