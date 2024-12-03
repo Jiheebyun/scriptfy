@@ -11,7 +11,7 @@
 ## 파일 구조 
 
 <details>
-  <summary>프로토타입 상속: Prototypical Inheritance</summary>
+  <summary>파일 구조 상세</summary>
 
 
 ```javascript
