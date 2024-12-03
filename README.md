@@ -18,7 +18,7 @@
 
 /my-ui-library
 │
-├── /dist                         # 빌드된 파일 (배포용)
+├── /dist                         # 배포용 빌드 결과물
 │   ├── react/
 │   │   ├── my-ui-library.react.esm.js
 │   │   ├── my-ui-library.react.cjs.js
@@ -34,61 +34,57 @@
 │   │
 │   └── index.js
 │
-├── /docs                        # 문서화와 데모 웹페이지 소스
-│   ├── /public                  # 정적 파일
-│   │   └── favicon.ico
-│   │
-│   ├── /src                     # 문서화 페이지 소스
+├── /src                          # 라이브러리와 데모 웹페이지 소스
+│   ├── /library                  # 라이브러리 소스 코드
 │   │   ├── /components
-│   │   │   ├── Header.js
-│   │   │   ├── Footer.js
-│   │   │   └── DemoSection.js   # 데모용 섹션 컴포넌트
+│   │   │   ├── /react            # React 컴포넌트
+│   │   │   │   ├── Button.tsx
+│   │   │   │   ├── Input.tsx
+│   │   │   │   ├── Button.module.scss
+│   │   │   │   └── index.ts
+│   │   │   │
+│   │   │   ├── /vanilla          # Vanilla JS 컴포넌트
+│   │   │   │   ├── Button.js
+│   │   │   │   ├── Input.js
+│   │   │   │   ├── Button.scss
+│   │   │   │   └── index.js
+│   │   │   │
+│   │   │   └── index.ts          # React & Vanilla 공통 모음
+│   │   │
+│   │   ├── /styles
+│   │   │   ├── global.scss       # 공통 스타일
+│   │   │   ├── theme.scss        # 테마 스타일
+│   │   │   └── mixins.scss       # SCSS 믹스인
+│   │   │
+│   │   └── index.ts              # 라이브러리 진입점
+│   │
+│   ├── /demo                     # 데모 웹페이지 코드
+│   │   ├── /components
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── DemoSection.tsx
 │   │   │
 │   │   ├── /pages
-│   │   │   ├── Home.js          # 메인 페이지
-│   │   │   ├── Docs.js          # 설명 페이지
-│   │   │   └── Examples.js      # 데모 페이지
+│   │   │   ├── Home.tsx          # 메인 페이지
+│   │   │   ├── Docs.tsx          # 설명 페이지
+│   │   │   └── Examples.tsx      # 데모 페이지
 │   │   │
-│   │   ├── App.js               # 문서화 웹사이트의 진입점
-│   │   └── index.js             # ReactDOM 렌더링
+│   │   ├── App.tsx               # 웹페이지 진입점
+│   │   └── index.tsx             # ReactDOM 렌더링
 │   │
-│   └── package.json             # 문서화 웹사이트의 별도 의존성
+│   └── index.ts                  # 개발 및 빌드 시 라이브러리/데모 선택 진입점
 │
-├── /src                        # 라이브러리 소스
-│   ├── /components
-│   │   ├── /react
-│   │   │   ├── Button.tsx
-│   │   │   ├── Input.tsx
-│   │   │   └── index.ts
-│   │   │
-│   │   ├── /vanilla
-│   │   │   ├── Button.js
-│   │   │   ├── Input.js
-│   │   │   └── index.js
-│   │   │
-│   │   └── index.js             # React & Vanilla 공통 모음
-│   │
-│   ├── /styles
-│   │   ├── global.css
-│   │   └── theme.js
-│   │
-│   └── index.js
-│
-├── /examples                   # 데모 코드
-│   ├── react/                  # React 데모 코드
-│   │   ├── react-button-demo.js
-│   │   ├── react-input-demo.js
-│   │   └── index.js
-│   │
-│   ├── vanilla/                # Vanilla JS 데모 코드
-│   │   ├── vanilla-button-demo.js
-│   │   ├── vanilla-input-demo.js
-│   │   └── index.html
+├── /scripts                      # 빌드 및 배포 스크립트
+│   ├── build-library.js
+│   ├── build-demo.js
+│   └── start-demo.js
 │
 ├── package.json
-├── rollup.config.js
+├── rollup.config.js              # 라이브러리 빌드 설정
+├── vite.config.ts                # 데모 웹페이지 빌드 설정 (Vite)
 ├── tsconfig.json
-├── README.md                   # GitHub 문서
+├── README.md                     # GitHub 문서
 └── .gitignore
+
 ```
 </details>
