@@ -29,6 +29,10 @@
 │   │   ├── my-ui-library.vanilla.esm.js
 │   │   └── my-ui-library.vanilla.min.js
 │   │
+│   ├── electron/                 # Electron 전용 빌드 결과물
+│   │   ├── my-ui-library.electron.cjs.js
+│   │   └── preload.js
+│   │
 │   ├── styles/
 │   │   └── my-ui-library.css
 │   │
@@ -49,7 +53,12 @@
 │   │   │   │   ├── Button.scss
 │   │   │   │   └── index.js
 │   │   │   │
-│   │   │   └── index.ts          # React & Vanilla 공통 모음
+│   │   │   ├── /electron         # Electron 전용 컴포넌트
+│   │   │   │   ├── FileManager.tsx
+│   │   │   │   ├── IPCButton.tsx
+│   │   │   │   └── index.ts      # Electron 컴포넌트 모음
+│   │   │   │
+│   │   │   └── index.ts          # React, Vanilla, Electron 공통 모음
 │   │   │
 │   │   ├── /styles
 │   │   │   ├── global.scss       # 공통 스타일
@@ -74,9 +83,16 @@
 │   │
 │   └── index.ts                  # 개발 및 빌드 시 라이브러리/데모 선택 진입점
 │
+├── /electron                     # Electron 관련 코드
+│   ├── main.js                   # Electron 메인 프로세스 코드
+│   ├── preload.js                # Preload 스크립트
+│   ├── ipc-handlers.js           # IPC 핸들러 모음
+│   └── config.js                 # Electron 설정
+│
 ├── /scripts                      # 빌드 및 배포 스크립트
 │   ├── build-library.js
 │   ├── build-demo.js
+│   ├── build-electron.js         # Electron 빌드 스크립트
 │   └── start-demo.js
 │
 ├── package.json
@@ -85,6 +101,7 @@
 ├── tsconfig.json
 ├── README.md                     # GitHub 문서
 └── .gitignore
+
 
 ```
 </details>
