@@ -105,3 +105,20 @@
 
 ```
 </details>
+
+
+
+### 구조와 설정 파일 매칭
+
+1. package.json
+- 프로젝트의 최상위 관리 파일로, 의존성 및 스크립트를 관리합니다.
+- 현재 구조에 맞게 다음 역할을 합니다:
+-- 스크립트 관리:
+--- build-library: src/library의 코드를 빌드하여 dist/react, dist/vanilla, dist/electron에 결과물 생성.
+--- start-demo: src/demo에서 Vite를 실행하여 데모 개발 서버를 시작.
+--- build-demo: src/demo를 빌드하여 최적화된 데모 결과물 생성.
+--- build-electron: Electron 관련 파일을 빌드.
+-- 의존성 관리:
+--- React, Rollup, Vite, TypeScript, Electron 등의 의존성 관리.
+
+
