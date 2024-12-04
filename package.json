@@ -1,0 +1,25 @@
+{
+  "name": "my-ui-library",
+  "version": "1.0.0",
+  "description": "A modular UI library with React, Vanilla JS, and Electron support",
+  "main": "dist/index.js",
+  "scripts": {
+    "start-demo": "vite",
+    "build": "npm run build-library && npm run build-demo && npm run build-electron",
+    "build-library": "rollup -c",
+    "build-demo": "vite build",
+    "build-electron": "node scripts/build-electron.js"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.12",
+    "@types/node": "^22.10.1",
+    "@vitejs/plugin-react": "^3.1.0",
+    "rollup": "^3.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^4.5.5"
+  }
+}
