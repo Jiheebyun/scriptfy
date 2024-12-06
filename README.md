@@ -16,7 +16,7 @@
 
 ```javascript
 
-/my-ui-library
+/scriptify
 │
 ├── /dist                         # 배포용 빌드 결과물
 │   ├── react/
@@ -68,18 +68,29 @@
 │   │   └── index.ts              # 라이브러리 진입점
 │   │
 │   ├── /demo                     # 데모 웹페이지 코드
-│   │   ├── /components
-│   │   │   ├── Header.tsx
-│   │   │   ├── Footer.tsx
-│   │   │   └── DemoSection.tsx
+│   │   ├── /public               # 정적 파일
+│   │   │   ├── index.html        # 메인 HTML 파일
+│   │   │   ├── favicon.ico       # (선택) 아이콘 파일
+│   │   │   ├── img/
+│   │   │   │   └── logo.png      # (선택) 이미지 파일
 │   │   │
-│   │   ├── /pages
-│   │   │   ├── Home.tsx          # 메인 페이지
-│   │   │   ├── Docs.tsx          # 설명 페이지
-│   │   │   └── Examples.tsx      # 데모 페이지
+│   │   ├── /src                  # React 소스 파일
+│   │   │   ├── index.tsx         # ReactDOM 렌더링 진입점
+│   │   │   ├── App.tsx           # React App 컴포넌트
+│   │   │   ├── /components       # React 컴포넌트
+│   │   │   │   ├── Header.tsx
+│   │   │   │   ├── Footer.tsx
+│   │   │   │   └── DemoSection.tsx
+│   │   │   │
+│   │   │   ├── /pages            # React 페이지 구성
+│   │   │   │   ├── Home.tsx      # 메인 페이지
+│   │   │   │   ├── Docs.tsx      # 설명 페이지
+│   │   │   │   └── Examples.tsx  # 데모 페이지
+│   │   │   │
+│   │   │   └── styles/           # 스타일 파일
+│   │   │       └── index.css     # 전역 스타일
 │   │   │
-│   │   ├── App.tsx               # 웹페이지 진입점
-│   │   └── index.tsx             # ReactDOM 렌더링
+│   │   └── index.ts              # 데모 진입점
 │   │
 │   └── index.ts                  # 개발 및 빌드 시 라이브러리/데모 선택 진입점
 │
