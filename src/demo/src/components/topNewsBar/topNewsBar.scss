@@ -1,0 +1,33 @@
+@use '../../styles/colors.scss' as colors;
+
+.layout-topbar-news {
+    height: 30px;
+    width: 100%; 
+    background: colors.$primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* 화면에 고정 */
+    top: 0; 
+    left: 0;
+    z-index: 1000; /* 다른 요소 위에 위치하도록 설정 */
+    
+    .news {
+        width: 500px; 
+        height: 100%;
+        padding: 0 2rem;
+        margin: 0 auto; 
+		display: flex; 
+        justify-content: center; 
+        align-items: center; 
+		span {
+			color: #fcfcfc;
+			font-weight: 800;
+		}
+		a {
+			margin: 0 10px ;
+			color: #fcfcfc;
+			cursor: pointer;
+		}
+    }
+}

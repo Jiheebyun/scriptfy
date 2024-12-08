@@ -1,0 +1,80 @@
+@use '../../styles/colors.scss' as colors;
+
+.top-nav-bar {
+    width: 100%;
+    background: gray;
+    position: sticky;
+    top: 0;
+    .layout-top-bar{
+      height: 55px;
+      width: auto;
+      top: 30px;
+      position: relative;
+      background-color: colors.$primary-background;
+      padding: 0 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .top-menu{
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        background-color: colors.$primary-background;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo-container{
+          width: 250px;
+          height: 100%;
+          // background-color: #9073ce;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .icons-container{
+          width: 350px;
+          height: 100%;
+          background-color: colors.$primary-background;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li{
+                width: 28px;
+                height: 28px;
+                border-radius: 5px;
+                border: 1px solid rgb(166, 166, 166);
+                margin: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                svg {
+                    color: #333; // 배경색과 명확히 구분되는 색으로 설정
+                }
+              a{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              &:hover{
+                svg {
+                    color: colors.$hovered-color; // hover 시 다른 색상으로 변경 가능
+                  }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+

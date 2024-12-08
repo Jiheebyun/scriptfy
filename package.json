@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build-library": "rollup -c rollup.config.js",
-  "test": "jest",
-  "lint": "eslint . --ext .ts,.tsx",
-  "start-demo": "vite --config vite.config.ts",
-  "build-demo": "vite build"
+    "build-library": "rollup -c rollup.config.js",
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "start-demo": "vite --config vite.config.ts",
+    "build-demo": "vite build"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
     "sass": "^1.82.0"
   },
   "devDependencies": {
