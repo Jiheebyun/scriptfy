@@ -16,7 +16,6 @@ export const MainPage = () => {
                 <TopNavBar/>
                 {/* section place */}
                 <MainSection/>
-                bottom section place
                 <section></section>
             </div>
         </div>
