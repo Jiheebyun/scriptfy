@@ -24,7 +24,7 @@ export const MainSection = () => {
                 </div>
 
 
-                
+
             </div>
         </section>
     )

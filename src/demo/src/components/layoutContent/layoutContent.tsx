@@ -1,15 +1,16 @@
 import React from "react";
-
+import { Outlet } from "react-router-dom";
 import './layoutContent.scss'
 
 
-export const layoutContent = () => {
+const LayoutContent: React.FC = () => {
     return (
-        <div className="mainFrame">
-            <div className="main-container">
-
-
+        <section className="section-layout">
+            <div className="section-container">
+                <Outlet/>
             </div>
-        </div>
+        </section>
     )
 }
+
+export default LayoutContent;
