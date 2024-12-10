@@ -4,7 +4,7 @@ import './mainContent.scss'
 
 const MainContent = () => {
     return (
-        <div>
+        <div className="section-content-wrapper">
             <div className="section-content-container">
                 <h1 className="content-title">The Most Complete UI Suite for <span>React.js</span></h1>
                 <p>

@@ -6,7 +6,6 @@ import ErrorBoundary from './components/errorBoundary/ErrorBoundary';
 import { RouteObject } from 'react-router-dom'; 
 
 import './App.css'
-import MainPage  from './pages/mainPage/mainPage';
 
 
 const renderRoutes = (routes: RouteObject[]): JSX.Element[] =>

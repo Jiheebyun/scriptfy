@@ -12,17 +12,6 @@
 
 .section-container{
     height: 1200px; // 지워야함
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    div{
-        flex: 1; 
-        background-color: #e0e0e0;
-        padding: 2rem;
-        text-align: center;
-        border: 1px solid #ccc;
-    }
 }
 
 .section-content-container{
