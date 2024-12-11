@@ -24,21 +24,6 @@ const routeConfig: RouteType[] = [
     ]
   },
   // {
-  //   path: 'about',
-  //   element: <About />,
-  // },
-  // {
-  //   path: 'dashboard',
-  //   element: <Dashboard />,
-  //   children: [
-  //     {
-  //       path: 'stats',
-  //       element: <Stats />,
-  //     },
-  //     // 추가적인 대시보드 하위 라우트
-  //   ],
-  // },
-  // {
   //   path: '*', // 모든 경로에 일치하지 않는 경우 NotFound 페이지 표시
   //   element: <NotFound />,
   // },

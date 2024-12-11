@@ -1,18 +1,18 @@
-import React from "react";
+// import React from "react";
 
-import './mainSection.scss'
+// import './mainSection.scss'
 
-export const MainSection = () => {
+// export const MainSection = () => {
 
-    return (
-        <section className="section-layout">
-            <div className="section-container">
+//     return (
+//         <section className="section-layout">
+//             <div className="section-container">
 
 
 
-            </div>
-        </section>
-    )
-}
+//             </div>
+//         </section>
+//     )
+// }
 
 //////////// 삭제 예정
