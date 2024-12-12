@@ -21,6 +21,11 @@ const routeConfig: RouteType[] = [
         path: '/',
         element: <MainContent />,
       },
+      {
+        path: '/installation',
+        element: ''
+      },
+
     ]
   },
   // {
