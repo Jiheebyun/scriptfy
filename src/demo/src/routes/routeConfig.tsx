@@ -1,6 +1,7 @@
 // src/routes/routeConfig.tsx
 import React, { lazy } from 'react';
 import LayoutContent from '../components/layoutContent/layoutContent.tsx';
+import LayoutDoc from '../components/layoutDoc/layoutDoc.tsx';
 
 // 페이지 컴포넌트 레이지 로딩
 const MainPage = lazy(() => import('../pages/mainPage/mainPage.tsx'));
@@ -23,7 +24,7 @@ const routeConfig: RouteType[] = [
       },
       {
         path: '/installation',
-        element: ''
+        element: <LayoutDoc></LayoutDoc>
       },
 
     ]
