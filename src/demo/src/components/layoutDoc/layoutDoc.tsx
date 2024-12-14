@@ -9,13 +9,13 @@ const LayoutDoc = () => {
     return (
         <section className="doc-layout">
             <div className="sidebar left">
-                왼쪽 사이드바
+                {/* 왼쪽 사이드바 */}
             </div>
             <div className="doc-content">
-                메인 콘텐츠
+                {/* 메인 콘텐츠 */}
             </div>
             <div className="sidebar right">
-                오른쪽 사이드바
+                {/* 오른쪽 사이드바 */}
             </div>
         </section>
     )

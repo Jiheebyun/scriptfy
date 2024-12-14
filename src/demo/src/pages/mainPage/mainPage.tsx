@@ -1,9 +1,8 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+
 import './mainPage.scss'
 import { TopNavBar } from "../../components/topNavBar/topNavBar";
 import { TopNewsBar } from "../../components/topNewsBar/topNewsBar";
-import { MainSection } from "../../components/mainSection/mainSection";
 import  LayoutContent  from "../../components/layoutContent/layoutContent";
 
 
