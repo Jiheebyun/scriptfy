@@ -2,48 +2,98 @@ export interface MenuItem {
     title: string;
     path?: string;
     children?: MenuItem[];
+    category?: string; 
 }
-
 
 
 export const menuData: MenuItem[] = [
     {
-      title: "홈",
-      path: "/home",
+        title: "Installation",
+        path: "",
+        children: [
+            {
+                title: "Installation",
+                path: "/installation"
+            },
+            {
+                title: "Configuration",
+                path: "/configuration"
+            }
+        ]
     },
     {
-      title: "소개",
-      path: "/about",
+        title: "Components",
+        path: "",
+        children: [
+            {
+                category: "Form",
+                title: "AutoComplete",
+                path: "/autocomplete",
+            },
+            {
+                category: "Form",
+                title: "Checkbox",
+                path: "/checkbox",
+            },
+            {
+                category: "Form",
+                title: "InputText",
+                path: "/inputtext",
+            },
+            {
+                category: "Button",
+                title: "Button",
+                path: "/button",
+            },
+            {
+                category: "Button",
+                title: "SplitButton",
+                path: "/splitbutton",
+            },
+        ],
+    },
+    {
+      title: "Theming",
       children: [
         {
-          title: "팀",
-          path: "/about/team",
+          title: "OverView",
+          path: "/overview",
         },
         {
-          title: "회사",
-          path: "/about/company",
+          title: "Colors",
+          path: "/colors",
+        },
+        {
+          title: "SASS API",
+          path: "www.google.ca",
+        },
+        {
+            category: "Unstyled Mode",
+            title: "Overview",
+            path: "/unstyled",
+        },
+        {
+            category: "Unstyled Mode",
+            title: "Bootstrap",
+            path: "/bootstrap",
         },
       ],
     },
     {
-      title: "서비스",
+      title: "Hooks",
+      path: "",
       children: [
         {
-          title: "디자인",
-          path: "/services/design",
+            category: "Lifecycle" ,
+            title: "useMountEffect",
+            path: "/hooks/usemounteffect"
         },
         {
-          title: "개발",
-          path: "/services/development",
-        },
-        {
-          title: "마케팅",
-          path: "/services/marketing",
-        },
-      ],
-    },
-    {
-      title: "연락처",
-      path: "/contact",
+            category: "Listener" ,
+            title: "useEventlistener",
+            path: "/hooks/useeventlistener"
+        }
+
+      ]
     },
   ];
