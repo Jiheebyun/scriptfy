@@ -1,0 +1,106 @@
+.menu-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  
+    .menu-button,
+    .menu-link,
+    .menu-text {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 8px 10px;
+      font-size: 14px;
+      cursor: pointer;
+      text-align: left;
+      text-decoration: none;
+      color: #333;
+  
+      &:hover {
+        background: #eaeaea;
+      }
+    }
+  
+    .menu-link {
+      color: #333;
+    }
+  }
+  
+  .submenu {
+    list-style: none;
+    padding-left: 15px;
+    margin: 0;
+    border-left: 2px solid #ddd;
+  
+    &.open {
+      // 여기에 transition 같은 애니메이션 적용 가능
+    }
+  
+    .submenu-item {
+      margin: 0;
+      padding: 0;
+  
+      .submenu-link,
+      .submenu-text {
+        display: block;
+        padding: 5px 10px;
+        font-size: 13px;
+        color: #555;
+        text-decoration: none;
+        cursor: pointer;
+  
+        &:hover {
+          background: #eee;
+        }
+      }
+    }
+  }
+  
+  .submenu-category-block {
+    margin-bottom: 5px;
+  
+    .submenu-category-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f0f0f0;
+      border: none;
+      padding: 5px 10px;
+      width: 100%;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #333;
+  
+      &:hover {
+        background: #e0e0e0;
+      }
+    }
+  
+    .submenu-category-list {
+      list-style: none;
+      padding-left: 15px;
+      margin: 0;
+      border-left: 2px solid #ddd;
+    }
+  }
+  
+  .arrow {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #555;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    transition: transform 0.2s ease-in-out;
+  
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+  
