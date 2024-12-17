@@ -14,7 +14,7 @@ const LayoutDoc = () => {
         <section className="doc-layout">
             <div className="sidebar left">
                 {/* 왼쪽 사이드바 */}
-                <DocSideBar item={menuData}></DocSideBar>
+                <DocSideBar items={menuData}></DocSideBar>
             </div>
             <div className="doc-content">
                 {/* 메인 콘텐츠 */}
