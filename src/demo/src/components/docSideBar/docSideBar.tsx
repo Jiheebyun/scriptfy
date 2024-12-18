@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import { MenuItem } from './sideBarMockup';
 
+import './docSideBar.scss'
+
 interface DocSideBarProps {
     items: MenuItem[]; // items로 변경
 }
@@ -22,10 +24,10 @@ const DocSideBar: React.FC<DocSideBarProps> = ({ items }) => {
             <div className={`layout-sidebar ${open ? 'open' : ''}`}>
                 <nav className="sidebar-nav">
                     <ul>
-                        <li><a href="#link1">Link 1</a></li>
-                        <li><a href="#link2">Link 2</a></li>
-                        <li><a href="#link3">Link 3</a></li>
-                        <li><a href="#link4">Link 4</a></li>
+                        <li><Link to="#link1">Link 1</Link></li>
+                        <li><Link to="#link2">Link 2</Link></li>
+                        <li><Link to="#link3">Link 3</Link></li>
+                        <li><Link to="#link4">Link 4</Link></li>
                     </ul>
                 </nav>
             </div>
