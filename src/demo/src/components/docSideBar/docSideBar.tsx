@@ -13,21 +13,31 @@ interface DocSideBarProps {
 // ** 컴포넌트를 더 작은 컴포넌트로 분리를 해야할지 고려해봐야함. **
 
 const DocSideBar: React.FC<DocSideBarProps> = ({ items }) => {
-    const [open, setOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-    const toggleSidebar = () => {
-        setOpen((prev) => !prev);
-    }
+    const toggleSubmenu = () => {
+        setIsOpen(prev => !prev);
+    };
+
+    console.log("On SideBar")
+    console.log(items)
 
     return (
         <div className="sidebar-wrapper">
-            <div className={`layout-sidebar ${open ? 'open' : ''}`}>
+            <div className={`layout-sidebar ${isOpen ? 'open' : ''}`}>
                 <nav className="sidebar-nav">
                     <ul>
-                        <li><Link to="#link1">Link 1</Link></li>
-                        <li><Link to="#link2">Link 2</Link></li>
-                        <li><Link to="#link3">Link 3</Link></li>
-                        <li><Link to="#link4">Link 4</Link></li>
+                        {items.map((item) => {
+                            return(
+                                <li>
+                                    <button className="menu-button" onClick={toggleSubmenu}>
+                                        {item.title}
+                                        <span className={`arrow ${isOpen ? 'open' : ''}`}></span>
+                                    </button>
+                                </li>
+                                // <li className="menu-button"><Link to="#link1">{item.title}</Link></li>
+                            )                        
+                        })}
                     </ul>
                 </nav>
             </div>
