@@ -7,36 +7,58 @@ import { MenuItem } from './sideBarMockup';
 import './docSideBar.scss'
 
 interface DocSideBarProps {
-    items: MenuItem[]; // items로 변경
+    items: MenuItem[];
 }
 
-// ** 컴포넌트를 더 작은 컴포넌트로 분리를 해야할지 고려해봐야함. **
-
 const DocSideBar: React.FC<DocSideBarProps> = ({ items }) => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
 
-    const toggleSubmenu = () => {
-        setIsOpen(prev => !prev);
+    const toggleSubmenu = (id: string) => {
+        setOpenItems((prev) => ({
+            ...prev,
+            [id]: !prev[id]
+        }));
     };
 
-    console.log("On SideBar")
-    console.log(items)
+    console.log("On SideBar");
+    console.log(items);
 
     return (
         <div className="sidebar-wrapper">
-            <div className={`layout-sidebar ${isOpen ? 'open' : ''}`}>
+            <div className="layout-sidebar">
                 <nav className="sidebar-nav">
                     <ul>
                         {items.map((item) => {
-                            return(
-                                <li>
-                                    <button className="menu-button" onClick={toggleSubmenu}>
+                            const isItemOpen = openItems[item.idx] || false;
+                            return (
+                                <li key={item.idx} className="menu-item">
+                                    <button 
+                                        className="menu-button"  
+                                        onClick={() => toggleSubmenu(item.idx)}
+                                        aria-expanded={isItemOpen}
+                                    >
                                         {item.title}
-                                        <span className={`arrow ${isOpen ? 'open' : ''}`}></span>
+                                        <span 
+                                            className={`arrow ${isItemOpen ? 'open' : ''}`}
+                                        ></span>
                                     </button>
+                                    {isItemOpen && item.children && (
+                                        <ul className="submenu">
+                                            {item.children.map((child) => (
+                                                <li key={child.idx} className="submenu-item">
+                                                    {child.path ? (
+                                                        <Link to={child.path} className="submenu-link">
+                                                            {child.title}
+                                                        </Link>
+                                                    ) : (
+                                                        <span className="submenu-text">{child.title}</span>
+                                                    )}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
                                 </li>
-                                // <li className="menu-button"><Link to="#link1">{item.title}</Link></li>
-                            )                        
+                            );
                         })}
                     </ul>
                 </nav>
@@ -44,7 +66,5 @@ const DocSideBar: React.FC<DocSideBarProps> = ({ items }) => {
         </div>
     );
 };
-
-
 
 export default DocSideBar;
