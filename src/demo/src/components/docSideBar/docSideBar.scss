@@ -1,56 +1,110 @@
+// docSideBar.scss
+
 @use '../../styles/colors.scss' as colors;
 
-.sidebar-container {
-  width: 100%;
-  height: auto;
-  background-color: #978b8b;
-  display: flex;
-  justify-content: space-between;
+$menu-bg: #f8f9fa;
+$menu-text: #333;
+$menu-border: #ddd;
+$menu-accent: colors.$primary-color;
+
+.sidebar-wrapper {
+    width: 250px;
 }
 
+.layout-sidebar {
+    background: $menu-bg;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-right: 1px solid $menu-border;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    height: 100vh; 
+    overflow-y: auto;
+}
 
-.sidebar-nav {
+.sidebar-nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
 
+.menu-item {
+    margin-bottom: 0.5rem;
 
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    li {
-      list-style-type: none;
-      .menu-button {
+    .menu-button {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
         background: none;
         border: none;
-        padding: 0.5rem 0;
+        padding: 0.75rem 1rem; 
         font-size: 14px;
         font-weight: 600;
-        color: black;
+        color: $menu-text;
         text-align: left;
         cursor: pointer;
-        // transition: background-color 0.2s ease;
-    
+        transition: background 0.2s ease;
+
         &:hover {
-          background: colors.$hovered-color;
+            background: colors.$hovered-color;
         }
-    
+
         .arrow {
-          margin-left: 0.5rem;
-          width: 0; 
-          height: 0;
-          border-left: 5px solid transparent;
-          border-right: 5px solid transparent;
-          border-top: 5px solid black;
-          transition: transform 0.2s ease;
-    
-          &.open {
-            transform: rotate(180deg);
-          }
+            margin-left: 0.5rem;
+            width: 0; 
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid $menu-text;
+            transition: transform 0.2s ease;
         }
-      }
+
+        &.open .arrow {
+            transform: rotate(180deg);
+        }
     }
-  }  
+
+    .submenu {
+        list-style: none; 
+        margin-left: 15px;
+        padding-left: 0rem; 
+        border-left: 2px solid $menu-accent;
+        /* position: relative; */ /* 상대 위치 지정 제거 */
+        /* left: -1rem; */ /* 서브 메뉴의 border-left를 왼쪽으로 이동시키는 설정 제거 */
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+
+        &.open {
+            max-height: 500px; 
+            opacity: 1;
+        }
+
+        .submenu-item {
+            padding: 0.5rem 0; 
+
+            .submenu-link,
+            .submenu-text {
+                display: block;
+                text-decoration: none;
+                font-weight: normal;
+                color: $menu-text;
+                padding: 0.5rem 1rem; 
+                transition: background 0.2s ease;
+
+                &:hover {
+                    background: colors.$hovered-color;
+                    color: $menu-text;
+                }
+            }
+        }
+    }
+}
+
+.arrow {
+    &.open {
+        transform: rotate(180deg);
+    }
 }

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import { MenuItem } from './sideBarMockup';
 
-import './docSideBar.scss'
+import './docSideBar.scss';
 
 interface DocSideBarProps {
     items: MenuItem[];
@@ -30,6 +30,7 @@ const DocSideBar: React.FC<DocSideBarProps> = ({ items }) => {
                     <ul>
                         {items.map((item) => {
                             const isItemOpen = openItems[item.idx] || false;
+                            const hasChildren = item.children && item.children.length > 0;
                             return (
                                 <li key={item.idx} className="menu-item">
                                     <button 
@@ -38,25 +39,23 @@ const DocSideBar: React.FC<DocSideBarProps> = ({ items }) => {
                                         aria-expanded={isItemOpen}
                                     >
                                         {item.title}
-                                        <span 
-                                            className={`arrow ${isItemOpen ? 'open' : ''}`}
-                                        ></span>
+                                        {hasChildren && (
+                                            <span className={`arrow ${isItemOpen ? 'open' : ''}`}></span>
+                                        )}
                                     </button>
-                                    {isItemOpen && item.children && (
-                                        <ul className="submenu">
-                                            {item.children.map((child) => (
-                                                <li key={child.idx} className="submenu-item">
-                                                    {child.path ? (
-                                                        <Link to={child.path} className="submenu-link">
-                                                            {child.title}
-                                                        </Link>
-                                                    ) : (
-                                                        <span className="submenu-text">{child.title}</span>
-                                                    )}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    )}
+                                    <ul className={`submenu ${isItemOpen ? 'open' : ''}`}>
+                                        {item.children && item.children.map((child) => (
+                                            <li key={child.idx} className="submenu-item">
+                                                {child.path ? (
+                                                    <Link to={child.path} className="submenu-link">
+                                                        {child.title}
+                                                    </Link>
+                                                ) : (
+                                                    <span className="submenu-text">{child.title}</span>
+                                                )}
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </li>
                             );
                         })}
