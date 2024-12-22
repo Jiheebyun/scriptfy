@@ -5,6 +5,7 @@
 $menu-bg: #f8f9fa;
 $menu-text: #333;
 $menu-border: #ddd;
+$menu-hover-color: #f0f0f0;
 $menu-accent: colors.$primary-color;
 
 .sidebar-wrapper {
@@ -46,7 +47,7 @@ $menu-accent: colors.$primary-color;
         transition: background 0.2s ease;
 
         &:hover {
-            background: colors.$hovered-color;
+            background: $menu-hover-color;
         }
 
         .arrow {
@@ -94,7 +95,7 @@ $menu-accent: colors.$primary-color;
                 transition: background 0.2s ease;
 
                 &:hover {
-                    background: colors.$hovered-color;
+                    background: $menu-hover-color;
                     color: $menu-text;
                 }
             }
