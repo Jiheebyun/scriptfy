@@ -10,6 +10,7 @@ interface DocSideBarProps {
     items: MenuItem[];
 }
 
+// doc page의 레이아웃을 따로 둬야할꺼같음
 const DocSideBar: React.FC<DocSideBarProps> = ({ items }) => {
     const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
 
