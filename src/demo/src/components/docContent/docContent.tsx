@@ -11,8 +11,11 @@ const DocContent = () => {
     // 같은 기능의 부수적인 기능이 결합된 기능 설명 UI
 
     return (
-        <div>
-
+        <div className="temp">
+            <h1>Title: Basic Setting</h1>
+            <p>awefawef</p>
         </div>
     )
 }
+
+export default DocContent
