@@ -3,6 +3,7 @@ import React, { lazy } from 'react';
 import LayoutContent from '../components/layoutContent/layoutContent.tsx';
 import LayoutDoc from '../components/layoutDoc/layoutDoc.tsx';
 import DocContent from '../components/docContent/docContent.tsx';
+import DocContentIntro from '../components/docContentIntro/docContentIntro.tsx';
 
 // 페이지 컴포넌트 레이지 로딩
 const MainPage = lazy(() => import('../pages/mainPage/mainPage.tsx'));
@@ -30,14 +31,13 @@ const routeConfig: RouteType[] = [
         element: <LayoutDoc />,
         children: [
           {
-            // /installation
             path: 'installation',
             element: <DocContent />,
           },
-          // {
-          //   path: 'installation',
-          //   element: <OverviewPage />,
-          // },
+          {
+            path: 'autocomplete',
+            element: <DocContentIntro />,
+          },
           // {
           //   // /advanced
           //   path: 'advanced',
