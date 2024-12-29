@@ -9,12 +9,15 @@
     /* 자식 div의 비율 설정 */
     .sidebar-left {
       width: 294.4px;
-      max-width: 294.4px;;
+      max-width: 294.4px;
+      height: 100vh;
       flex: 2;
       background-color: #d05e5e;
       padding: 1rem;
       box-sizing: border-box;
       position: sticky;
+      top: 115px;
+      left: 0px;
     }
   
     .doc-content {

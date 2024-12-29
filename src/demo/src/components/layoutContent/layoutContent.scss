@@ -2,7 +2,6 @@
 
 .section-layout{
     width:  100%;
-    height: 100%;
     padding: 3rem 3rem 3rem 3rem;
     // padding-left: 5rem;
     // padding-right: 5rem;
@@ -11,7 +10,7 @@
 }
 
 .section-container{
-    height: 1200px; // 지워야함
+    height: auto; // 지워야함
     display: flex; 
 }
 
