@@ -45,10 +45,12 @@
   @media (max-width: 1200px) {
     .doc-layout {
       flex-direction: column;
-  
-      .sidebar.left,
-      .sidebar.right {
+      .sidebar-left,
+      .sidebar-right {
         display: none; /* 사이드바 숨기기 */
+      }
+      .doc-content{
+        width: 100%;
       }
   
       .main {
