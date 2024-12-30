@@ -65,7 +65,7 @@
                 cursor: pointer;
 
                 svg {
-                    color: #333; // 배경색과 명확히 구분되는 색으로 설정
+                    color: #333;
                 }
 
                 a{
@@ -78,7 +78,7 @@
 
                 &:hover{
                   svg {
-                      color: colors.$hovered-color; // hover 시 다른 색상으로 변경 가능
+                      color: colors.$hovered-color; 
                     }
                 }
             }
