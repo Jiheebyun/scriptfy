@@ -1,0 +1,15 @@
+@use '../../styles/colors.scss' as colors;
+
+
+.layout-footer{
+    width: 100%;
+    height: 100px;
+    background-color: colors.$primary-color;
+    position: relative;
+    .footer-container{
+        width: 100%;
+        display: flex;
+        position: relative;
+        bottom: 10;
+    }
+}

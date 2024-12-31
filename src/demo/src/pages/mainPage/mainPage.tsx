@@ -4,6 +4,7 @@ import './mainPage.scss'
 import { TopNavBar } from "../../components/topNavBar/topNavBar";
 import { TopNewsBar } from "../../components/topNewsBar/topNewsBar";
 import  LayoutContent  from "../../components/layoutContent/layoutContent";
+import Footer from "../../components/footer/footer";
 
 
 // import { BottomSection } from "../../../components/bottomSection/bottomSection";
@@ -15,9 +16,8 @@ const MainPage = () => {
             <div className="main-container">
                 <TopNewsBar/>
                 <TopNavBar/>
-                {/* section place */}
                 <LayoutContent/>
-                <section></section>
+                <Footer/>
             </div>
         </div>
     ) 
