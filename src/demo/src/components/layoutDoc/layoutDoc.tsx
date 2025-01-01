@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 
 import './layoutDoc.scss'
@@ -9,9 +9,22 @@ import { menuData } from "../docSideBar/sideBarMockup" // 백앤드 구현시 �
 
 
 const LayoutDoc = () => {
+  // 스크롤 위치를 저장할 state
+  const [scrollY, setScrollY] = useState<number>(0);
 
-    console.log('layoutDoc')
-    console.log(menuData)
+  useEffect(() => {
+    // 스크롤 이벤트 핸들러
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  console.log('SCROLL', scrollY)
     return (
         <section className="doc-layout">
             <div className="sidebar-left">

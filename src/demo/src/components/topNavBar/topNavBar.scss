@@ -2,7 +2,6 @@
 
 .top-nav-bar {
     width: 100%;
-    background: gray;
     position: sticky;
     top: 0;
     z-index: 9990; /* 제일 높은 z-index : 9999 -> : topNewsBar*/
@@ -41,7 +40,6 @@
         .icons-container{
           width: 350px;
           height: 100%;
-          background-color: colors.$primary-background;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -83,6 +81,17 @@
                 }
             }
           }
+        }
+      }
+      &.layout-top-bar--scrolled {
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);                // 흐림 정도
+        -webkit-backdrop-filter: blur(5px);        // Safari 대응
+      
+        .top-menu {
+          background-color: rgba(255, 255, 255, 0.4);
+          backdrop-filter: blur(5px);                // 흐림 정도
+          -webkit-backdrop-filter: blur(5px);        // Safari 대응
         }
       }
     }
