@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-
+import './docContentIntro.scss'
 
 const DocContentIntro = () => {
     const [title, setTitle] = useState('Calendar');
@@ -8,19 +8,16 @@ const DocContentIntro = () => {
     const a = Array(65).fill(null)
     console.log()
     return(
-        <div className="doc-intro">
-            <h1>{title}</h1>
-            <p>{content}</p>
-            {
-            a.map((d) => {
+        <>
+            {a.map((a)=>{
                 return (
-                    <>
+                    <div className="doc-intro">
                         <h1>{title}</h1>
                         <p>{content}</p>
-                    </>
+                    </div>
                 )
             })}
-        </div>
+        </>
     )
 }
 
