@@ -57,7 +57,6 @@ const test = function() {
         return (
         <div
         style={{ position: 'relative' }}
-        // 코드 영역에 마우스를 올릴 때 / 뗄 때
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         >

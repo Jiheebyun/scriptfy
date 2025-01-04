@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import DocContentCode from "../docContentCode/docContentCode";
 
 import './docContentIntro.scss'
+import DocContentComponent from "../docContentComponent/docContentComponent";
 
 const DocContentIntro = () => {
     const [title, setTitle] = useState('Calendar');
@@ -17,6 +18,7 @@ const DocContentIntro = () => {
                         <h1>{title}</h1>
                         <p>{content}</p>
                         <DocContentCode/>
+                        <DocContentComponent/>
                     </div>
                 )
             })}

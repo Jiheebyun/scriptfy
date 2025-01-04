@@ -1,0 +1,19 @@
+@use '../../styles/colors.scss' as colors;
+
+.component-layout{
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: colors.$primary-background;
+    height: auto;// 지워야함
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+    border: 1px solid colors.$primary-border-color;
+    border-radius: 10px;
+    margin: 15px 0;
+    button{ // button 지원야함 
+        width: 100px;
+        height: 80px;
+    }
+}
