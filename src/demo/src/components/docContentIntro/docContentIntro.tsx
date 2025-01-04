@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import DocContentCode from "../docContentCode/docContentCode";
+
 import './docContentIntro.scss'
 
 const DocContentIntro = () => {
@@ -14,6 +16,7 @@ const DocContentIntro = () => {
                     <div className="doc-intro">
                         <h1>{title}</h1>
                         <p>{content}</p>
+                        <DocContentCode/>
                     </div>
                 )
             })}
