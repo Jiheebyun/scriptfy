@@ -4,39 +4,41 @@ const data ={
     id: "",
     subContents: [
         {
-            index: "",
+            index: "1",
+            id: "",
+            subTitle: "",
+            content: "",
+            code: '',
+            component: "",
+        },
+        {
+            index: "2",
+            id: "",
+            subTitle: "",
+            content: "",
+
+        },
+        {
+            index: "3",
             id: "",
             subTitle: "",
             content: "",
             code: '',
         },
         {
-            index: "",
+            index: "4",
             id: "",
             subTitle: "",
             content: "",
-            code: '',
+            component:""
         },
         {
-            index: "",
+            index: "5",
             id: "",
             subTitle: "",
             content: "",
             code: '',
-        },
-        {
-            index: "",
-            id: "",
-            subTitle: "",
-            content: "",
-            code: '',
-        },
-        {
-            index: "",
-            id: "",
-            subTitle: "",
-            content: "",
-            code: '',
+            component: ""
         },
     ]
 }
