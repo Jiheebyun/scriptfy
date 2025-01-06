@@ -13,7 +13,7 @@ interface DocSideBarProps {
 const DocSideBar: React.FC<DocSideBarProps> = ({ items }) => {
     const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
     const {pathname} = useLocation(); // 현재 url에 해당하는 메뉴를 열어주는 기능을 추후에 추가
-    console.log(pathname)
+
     const toggleSubmenu = (id: string) => {
         setOpenItems((prev) => ({
             ...prev,

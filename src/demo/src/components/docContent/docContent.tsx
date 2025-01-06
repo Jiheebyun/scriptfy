@@ -1,52 +1,9 @@
 import React, { useState } from "react";
 
-
-const data = {
-    title: "",
-    content: "",
-    id: "",
-    subContents: [
-        {
-            index: "",
-            id: "",
-            subTitle: "",
-            content: "",
-            code: '',
-        },
-        {
-            index: "",
-            id: "",
-            subTitle: "",
-            content: "",
-            code: '',
-        },
-        {
-            index: "",
-            id: "",
-            subTitle: "",
-            content: "",
-            code: '',
-        },
-        {
-            index: "",
-            id: "",
-            subTitle: "",
-            content: "",
-            code: '',
-        },
-        {
-            index: "",
-            id: "",
-            subTitle: "",
-            content: "",
-            code: '',
-        },
-    ]
-}
-
+import data from './contentMockup';
 
 const DocContent = () => {
-    const mockupData = useState()
+    const [mockupData, setMockupData] = useState(data)
     // 해당 컴포넌트의 기능 
     // 해당 하는 내용의  title UI 
     // 컴포넌트의 import  설명 UI
@@ -54,6 +11,7 @@ const DocContent = () => {
 
     // 같은 기능의 부수적인 기능이 결합된 기능 설명 UI
 
+    console.log(mockupData)
     
 
     return (

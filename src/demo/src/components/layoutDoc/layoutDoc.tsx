@@ -24,7 +24,6 @@ const LayoutDoc = () => {
     };
   }, []);
 
-  console.log('SCROLL', scrollY)
     return (
         <section className="doc-layout">
             <div className="sidebar-left">
