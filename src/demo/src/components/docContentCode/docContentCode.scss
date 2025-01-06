@@ -1,0 +1,36 @@
+/* 부모 컨테이너 */
+.code-snippet-container {
+    position: relative;
+  
+    &:hover .copy-btn {
+      opacity: 1;
+      pointer-events: auto;
+      border-color: #ddd;
+    }
+  }
+  
+  /* 복사하기 버튼 */
+  .copy-btn {
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    top: 1.5rem;
+    right: 1.5rem;
+    opacity: 0;          
+    pointer-events: none;  
+    cursor: pointer;
+  
+    background-color: #374151;
+    color: #fff;
+  
+    border: 1px solid transparent;
+  
+    transition: 
+      opacity 0.2s ease-in-out,
+      border-color 0.2s ease-in-out;
+  
+    &:hover {
+      border-color: #ddd;
+    }
+  }
+  

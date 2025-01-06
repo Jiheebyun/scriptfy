@@ -43,7 +43,7 @@ const test = function() {
         padding: '1rem',
     };
 
-  const copyToClipboard = async () => {
+    const copyToClipboard = async () => {
         try {
         await navigator.clipboard.writeText(codeString);
         setCopied(true);
@@ -54,35 +54,27 @@ const test = function() {
         }
     };
 
-        return (
+    return (
         <div
-        style={{ position: 'relative' }}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
+            className="code-snippet-container"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
         >
         {/* 코드 하이라이팅 */}
-        <SyntaxHighlighter
-            language="jsx"
-            style={customTheme}
-            customStyle={customStyle}
-            showLineNumbers
-            wrapLongLines
-        >
-            {codeString}
-        </SyntaxHighlighter>
+            <SyntaxHighlighter
+                language="jsx"
+                style={customTheme}
+                customStyle={customStyle}
+                showLineNumbers
+                wrapLongLines
+            >
+                {codeString}
+            </SyntaxHighlighter>
 
         {/* 복사하기 버튼 */}
         <button
+            className="copy-btn"
             onClick={copyToClipboard}
-            style={{
-            position: 'absolute',
-            top: '0.75rem',
-            right: '0.75rem',
-            opacity: hovered ? 1 : 0,          // 호버 시 보이도록
-            pointerEvents: hovered ? 'auto' : 'none', // 호버 아닐 때 클릭 불가
-            transition: 'opacity 0.2s ease-in-out',
-            cursor: 'pointer',
-            }}
         >
             {copied ? '복사 완료!' : '복사하기'}
         </button>
