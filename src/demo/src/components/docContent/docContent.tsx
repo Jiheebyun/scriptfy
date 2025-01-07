@@ -4,12 +4,10 @@ import data from './contentMockup';
 
 const DocContent = () => {
     const [mockupData, setMockupData] = useState(data)
-    // 해당 컴포넌트의 기능 
-    // 해당 하는 내용의  title UI 
-    // 컴포넌트의 import  설명 UI
-    // Basic 기능 설명 UI
+    // docContentIntro, docContentCode, docContentComponent로 Content를 그려야함
+    // 데이터로 인해서 페이지가 그려진다. 
+    // URL의 라우팅을 어떻게 해야할지 고민해봐야함
 
-    // 같은 기능의 부수적인 기능이 결합된 기능 설명 UI
 
     console.log(mockupData)
     
