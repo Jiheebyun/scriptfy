@@ -14,10 +14,10 @@ const DocContent = () => {
     
 
     return (
-        <div className="temp">
+        <div className="content-container">
             {mockupData.map((data)=> {
                 console.log(data)
-                return <DocContentIntro data={mockupData}/>
+                return <DocContentIntro data={data}/>
             })}
         </div>
     )

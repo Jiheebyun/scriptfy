@@ -7,6 +7,7 @@ import './docContentIntro.scss'
 const DocContentIntro = ({data}) => {
     console.log(`Intro`)
     console.log(data)
+    data.title
     return(
         <>
             <div className="doc-intro">
