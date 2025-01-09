@@ -11,13 +11,20 @@ const DocContent = () => {
 
 
     console.log(mockupData)
-    
-
+    // Data associated with components 
+    // **SubContent** 
+    // subTitle = <docContentTitle> 
+    // content = <docContentParagraphe>
+    // code = <docContentCode>
+    // component = the corresponding component
     return (
         <div className="content-container">
             {mockupData.map((data)=> {
                 console.log(data)
                 return <DocContentIntro data={data}/>
+            })}
+            {mockupData.map(() => {
+                return <></>
             })}
         </div>
     )
