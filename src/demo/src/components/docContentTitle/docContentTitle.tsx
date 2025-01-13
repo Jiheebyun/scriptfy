@@ -2,10 +2,14 @@ import React from "react";
 
 import './docContentTitle.scss';
 
-const DocContentTilte = () => {
+type DocContentTitleProps = {
+    subTitle: string;
+  };
+
+const DocContentTilte = ({ subTitle }: DocContentTitleProps) => {
     return(
         <>
-            <h1>Group</h1>
+            <h1>{subTitle}</h1>
         </>
     )
 };
