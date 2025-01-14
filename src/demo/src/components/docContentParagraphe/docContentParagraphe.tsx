@@ -3,7 +3,7 @@ import React from "react";
 import './docContentParagraphe.scss'
 
 
-const DocContentParagraphe = ({content}) => {
+const DocContentParagraphe = ({content}: any) => {
 
     return (
         <>

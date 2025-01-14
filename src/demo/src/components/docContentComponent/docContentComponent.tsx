@@ -12,6 +12,7 @@ const DocContentComponent = ({component}) => {
         padding: '1rem',
         radius: '10px'
     };
+    console.log(component)
 
     return (
         <>
