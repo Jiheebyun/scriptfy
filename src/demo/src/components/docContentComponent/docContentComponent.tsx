@@ -3,7 +3,7 @@ import React from "react";
 
 import './docContentComponent.scss';
 
-const DocContentComponent = () => {
+const DocContentComponent = ({component}) => {
 
 
     const testStyle = { // Test Style

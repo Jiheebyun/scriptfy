@@ -1,7 +1,7 @@
 /* 부모 컨테이너 */
 .code-snippet-container {
     position: relative;
-  
+
     &:hover .copy-btn {
       opacity: 1;
       pointer-events: auto;
@@ -12,10 +12,10 @@
   /* 복사하기 버튼 */
   .copy-btn {
     position: absolute;
-    padding: 10px;
+    padding: 6px;
     border-radius: 10px;
-    top: 1.5rem;
-    right: 1.5rem;
+    top: 0.5rem;
+    right: 0.5rem;
     opacity: 0;          
     pointer-events: none;  
     cursor: pointer;
@@ -33,4 +33,4 @@
       border-color: #ddd;
     }
   }
-  
+ 

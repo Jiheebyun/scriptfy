@@ -9,7 +9,7 @@ type DocContentTitleProps = {
 const DocContentTilte = ({ subTitle }: DocContentTitleProps) => {
     return(
         <>
-            <h1>{subTitle}</h1>
+            <h1 className="doc-content-title">{subTitle}</h1>
         </>
     )
 };

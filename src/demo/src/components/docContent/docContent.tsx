@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import data from './contentMockup';
 import DocContentIntro from "../docContentIntro/docContentIntro";
 import DocContentTilte from "../docContentTitle/docContentTitle";
+import DocContentParagraphe from "../docContentParagraphe/docContentParagraphe";
+import DocContentCode from "../docContentCode/docContentCode";
+import DocContentComponent from "../docContentComponent/docContentComponent";
 
 const DocContent = () => {
     const [mockupData, setMockupData] = useState([data])
@@ -40,6 +43,9 @@ const DocContent = () => {
                 console.log(subContent)
                 return <>
                     {subContent?.subTitle && <DocContentTilte subTitle={subContent.subTitle}/>}
+                    {subContent?.content && <DocContentParagraphe content={subContent.content}/>}
+                    {subContent?.code && <DocContentCode code={subContent.code}/>}
+                    {subContent?.component && <DocContentComponent component={subContent.component}/>}
                 </>
             })}
         </div>
