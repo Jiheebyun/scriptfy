@@ -1,7 +1,6 @@
 /* 부모 컨테이너 */
 .code-snippet-container {
     position: relative;
-
     &:hover .copy-btn {
       opacity: 1;
       pointer-events: auto;
@@ -33,4 +32,4 @@
       border-color: #ddd;
     }
   }
- 
+

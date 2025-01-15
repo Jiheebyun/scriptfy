@@ -45,7 +45,7 @@ const DocContent = () => {
                     {subContent?.subTitle && <DocContentTilte subTitle={subContent.subTitle}/>}
                     {subContent?.content && <DocContentParagraphe content={subContent.content}/>}
                     {subContent?.code && <DocContentCode code={subContent.code}/>}
-                    {subContent?.component && <DocContentComponent component={subContent.component}/>}
+                    {/* {subContent?.component && <DocContentComponent component={subContent.component}/>} */}
                 </>
             })}
         </div>

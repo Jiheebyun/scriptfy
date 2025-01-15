@@ -28,6 +28,10 @@ const DocContentCode = ({code}) => {
         backgroundColor: '#374151',
         borderRadius: '10px',
         padding: '1rem',
+        width: '100%',
+        maxWidth: '100%',
+        whiteSpace: 'pre',  
+        overflowX: 'auto',   
     };
 
     const copyToClipboard = async () => {
