@@ -28,9 +28,9 @@ const DocContentCode = ({code}) => {
         backgroundColor: '#374151',
         borderRadius: '10px',
         padding: '1rem',
-        width: '100%',
-        maxWidth: '100%',
-        whiteSpace: 'pre',  
+        width: '100%',     
+        maxWidth: '100%',    
+        whiteSpace: 'pre',   
         overflowX: 'auto',   
     };
 
@@ -54,6 +54,7 @@ const DocContentCode = ({code}) => {
             {/* 코드 하이라이팅 */}
             <SyntaxHighlighter
                 language="jsx"
+                customClassName="my-syntax-highlighter"
                 style={customTheme}
                 customStyle={customStyle}
                 showLineNumbers

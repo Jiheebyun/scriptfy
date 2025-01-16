@@ -15,7 +15,7 @@ const data ={
             subTitle: "Basic",
             content: "Checkbox is used as a controlled input with checked and onChange properties.",
             component: '<ChackBox/>',
-            code: "<CheckBox onChange={e => setChecked(e.checked)}></Checkbox>\n<CheckBox onChange={e => setChecked(e.checked)}></Checkbox>\n<CheckBox onChange={e => setChecked(e.checked)}></Checkbox>",
+            code: "<CheckBox onChange={e => setChecked(e.checked)}>\n</Checkbox><CheckBox onChange={e => setChecked(e.checked)}></Checkbox>\n<CheckBox onChange={e => setChecked(e.checked)}></Checkbox>",
         },
         {
             index: "3",

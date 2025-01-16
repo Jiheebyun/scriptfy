@@ -1,6 +1,7 @@
 /* 부모 컨테이너 */
 .code-snippet-container {
     position: relative;
+    width: 100%;
     &:hover .copy-btn {
       opacity: 1;
       pointer-events: auto;
@@ -18,18 +19,29 @@
     opacity: 0;          
     pointer-events: none;  
     cursor: pointer;
-  
     background-color: #374151;
     color: #fff;
-  
     border: 1px solid transparent;
-  
-    transition: 
-      opacity 0.2s ease-in-out,
-      border-color 0.2s ease-in-out;
-  
+    transition: opacity 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    
     &:hover {
       border-color: #ddd;
     }
   }
+  
 
+  pre.my-syntax-highlighter,
+  pre.my-syntax-highlighter * {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    white-space: pre !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  :global(pre.my-syntax-highlighter code > span) {
+    display: inline-block !important;
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+  }
