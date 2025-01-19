@@ -3,7 +3,7 @@
     width: 100%;
     // height: 100vh; /* 필요에 따라 조정 */
     height: auto;
-    min-height: 100vh; /* height를 min-height로 변경 */
+    min-height: 100vh;
     align-items: start;
     
     /* 자식 div의 비율 설정 */
@@ -23,7 +23,7 @@
   
     .doc-content {
       width: 100%;
-      flex: 1;  // 또는 flex: 1 1 auto;
+      flex: 1 1 auto;
       background-color: #ffffff;
       padding: 1rem;
       box-sizing: border-box;
@@ -36,7 +36,7 @@
       height: 100vh;
       max-width: 290px;;
       /* 오른쪽 사이드바도 고정 크기로 유지 */
-      flex: 0 0 290.0px;  // 이 설정을 통해 사이드바는 shrink되지 않음
+      flex: 0 0 290.0px; 
       background-color: #4c3d3d;
       position: sticky;
       top: 135px;

@@ -1,7 +1,7 @@
-/* 부모 컨테이너 */
 .code-snippet-container {
     position: relative;
     width: 100%;
+  
     &:hover .copy-btn {
       opacity: 1;
       pointer-events: auto;
@@ -9,39 +9,63 @@
     }
   }
   
-  /* 복사하기 버튼 */
+  .code-wrapper {
+    background-color: #374151;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
+  }
+  
+  /* 복사하기 버튼 스타일 */
   .copy-btn {
     position: absolute;
     padding: 6px;
     border-radius: 10px;
     top: 0.5rem;
     right: 0.5rem;
-    opacity: 0;          
-    pointer-events: none;  
+    opacity: 0;
+    pointer-events: none;
     cursor: pointer;
     background-color: #374151;
     color: #fff;
     border: 1px solid transparent;
     transition: opacity 0.2s ease-in-out, border-color 0.2s ease-in-out;
-    
+  
     &:hover {
       border-color: #ddd;
     }
   }
   
-
-  pre.my-syntax-highlighter,
-  pre.my-syntax-highlighter * {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: auto !important;
-    white-space: pre !important;
-    min-width: 0 !important;
-    box-sizing: border-box !important;
+/* 
+    CodeMirror 내부 요소에 대한 오버라이드:
+*/
+.cm-scroller,
+.cm-content,
+.cm-content * {
+  white-space: pre-wrap !important;
+  overflow-wrap: break-word !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+/* 검정색 선/배경을 없애기 위해, 가터와 활성 줄 등 스타일 제거 */
+.cm-scroller {
+    border: none !important;
+    box-shadow: none !important;
+    background: #374151 !important; 
   }
-
-  :global(pre.my-syntax-highlighter code > span) {
-    display: inline-block !important;
-    min-width: 0 !important;
-    flex-shrink: 1 !important;
+  
+  .cm-gutters,
+  .cm-gutter {
+    background: transparent !important;
+    border: none !important;
+  }
+  
+  /* 활성 라인(커서가 있는 줄) 배경 제거 */
+  .cm-activeLine,
+  .cm-activeLineGutter {
+    background: none !important;
+    border: none !important;
   }
