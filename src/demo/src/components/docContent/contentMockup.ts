@@ -38,6 +38,46 @@ const data ={
             code: '<Checkbox invalid={!checked} onChange={(e) => setChecked(e.checked)} checked={checked}></Checkbox>',
             component: ""
         },
+        {
+            index: "6",
+            id: "ab6",
+            subTitle: "Invalid",
+            content: "Invalid state is displayed using the invalid prop to indicate a failed validation. You can use this style when integrating with form validation libraries.",
+            code: '<Checkbox invalid={!checked} onChange={(e) => setChecked(e.checked)} checked={checked}></Checkbox>',
+            component: ""
+        },
+        {
+            index: "7",
+            id: "ab6",
+            subTitle: "Invalid",
+            content: "Invalid state is displayed using the invalid prop to indicate a failed validation. You can use this style when integrating with form validation libraries.",
+            code: '<Checkbox invalid={!checked} onChange={(e) => setChecked(e.checked)} checked={checked}></Checkbox>',
+            component: ""
+        },
+        {
+            index: "8",
+            id: "ab6",
+            subTitle: "Invalid",
+            content: "Invalid state is displayed using the invalid prop to indicate a failed validation. You can use this style when integrating with form validation libraries.",
+            code: '<Checkbox invalid={!checked} onChange={(e) => setChecked(e.checked)} checked={checked}></Checkbox>',
+            component: ""
+        },
+        {
+            index: "9",
+            id: "ab6",
+            subTitle: "Invalid",
+            content: "Invalid state is displayed using the invalid prop to indicate a failed validation. You can use this style when integrating with form validation libraries.",
+            code: '<Checkbox invalid={!checked} onChange={(e) => setChecked(e.checked)} checked={checked}></Checkbox>',
+            component: ""
+        },
+        {
+            index: "10",
+            id: "ab6",
+            subTitle: "Invalid",
+            content: "Invalid state is displayed using the invalid prop to indicate a failed validation. You can use this style when integrating with form validation libraries.",
+            code: '<Checkbox invalid={!checked} onChange={(e) => setChecked(e.checked)} checked={checked}></Checkbox>',
+            component: ""
+        },
     ]
 };
 

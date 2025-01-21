@@ -6,6 +6,7 @@ import ErrorBoundary from './components/errorBoundary/ErrorBoundary';
 import { RouteObject } from 'react-router-dom'; 
 
 import './App.css'
+import Overlay from './components/overlayPanel/overlayPanel';
 
 
 const renderRoutes = (routes: RouteObject[]): JSX.Element[] =>

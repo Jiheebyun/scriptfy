@@ -1,0 +1,17 @@
+.overlay-layout {
+    position: fixed;   /* 화면 뷰포트 기준 고정 */
+    top: 0;
+    left: 0;
+    min-width: 100vw;       /* 화면 전체 너비 */
+    min-height: 100vh;      /* 화면 전체 높이 */
+    z-index: 9999;
+  
+    /* 배경색(예: 반투명 검정) */
+    background-color: rgba(0, 0, 0, 0.5);
+  
+    /* 자식 컨테이너를 중앙 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
