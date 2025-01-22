@@ -13,12 +13,13 @@ $menu-accent: colors.$primary-color;
 
 .layout-sidebar {
     background: $menu-bg;
-    padding: 1rem;
+    padding: 0 1rem;
     box-sizing: border-box;
     border-right: 1px solid $menu-border;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    height: 100vh; 
+    height: 100%; 
+    box-sizing: border-box;
     overflow-y: auto;
 }
 

@@ -26,6 +26,10 @@ export const TopNavBar = () => {
         };
     }, []);
 
+    const searchHandler = () => {
+        console.log("SEARCH!")
+    }
+
     return (
         <div className="top-nav-bar">
             {/* isScrolled 상태에 따라 layout-top-bar에 .scrolled 클래스를 토글 */}
@@ -37,7 +41,7 @@ export const TopNavBar = () => {
                     <div className="icons-container">
                         <ul>
                             <li>
-                                <IoSearch/>
+                                <IoSearch onClick={(e)=>{searchHandler()}}/>
                             </li>
                             <li>
                                 <a
