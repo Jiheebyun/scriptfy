@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { OverlayContext } from "../../contexts/OverlayContext";
 import { FaGithub } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import './topNavBar.scss';
 
 export const TopNavBar = () => {
+    const { isOpen, openOverlay, closeOverlay } = useContext(OverlayContext);
     const [isScrolled, setIsScrolled] = useState(false);
     const imagePath = import.meta.env.VITE_IMAGE_PATH;
     
@@ -26,8 +28,25 @@ export const TopNavBar = () => {
         };
     }, []);
 
+    useEffect(() => {
+        function handleKeyDown(e: KeyboardEvent) {
+          if (isOpen && e.key === 'Escape') {
+            closeOverlay();
+          }
+        }
+
+        window.addEventListener('keydown', handleKeyDown);
+    
+        return () => {
+          window.removeEventListener('keydown', handleKeyDown);
+        };
+      }, [isOpen, closeOverlay]);
+
     const searchHandler = () => {
-        console.log("SEARCH!")
+        console.log("SEARCH!");
+        openOverlay(
+            <h1>Hello, It is a overlay for the search !</h1>
+        );
     }
 
     return (
@@ -40,8 +59,8 @@ export const TopNavBar = () => {
                     </div>
                     <div className="icons-container">
                         <ul>
-                            <li>
-                                <IoSearch onClick={(e)=>{searchHandler()}}/>
+                            <li onClick={(e)=>{searchHandler()}}>
+                                <IoSearch/>
                             </li>
                             <li>
                                 <a

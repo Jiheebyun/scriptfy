@@ -24,7 +24,6 @@ const renderRoutes = (routes: RouteObject[]): JSX.Element[] =>
 function App() {
   return (
     <div className="App">
-      {/* <Overlay/> */}
       <Router>
         <ErrorBoundary>
           <Suspense fallback={<div>Loading...</div>}>
