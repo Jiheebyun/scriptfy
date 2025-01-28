@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import './topNavBar.scss';
+import { color } from "@uiw/react-codemirror";
 
 export const TopNavBar = () => {
     const { isOpen, openOverlay, closeOverlay } = useContext(OverlayContext);
@@ -45,7 +46,10 @@ export const TopNavBar = () => {
     const searchHandler = () => {
         console.log("SEARCH!");
         openOverlay(
-            <h1>Hello, It is a overlay for the search !</h1>
+            <div style={{height: "auto", minWidth: "35%", background: "white", borderRadius: "5px", margin: "10px", padding: '20px', display: "flex", justifyContent: 'center', alignItems:'center', flexDirection: "column"}}>
+                <input style={inputStyle}></input>
+                <h1 style={{color: "gray"}}>Hello, It is a overlay for the search !</h1>
+            </div>
         );
     }
 
@@ -81,3 +85,17 @@ export const TopNavBar = () => {
         </div>
     )
 };
+
+
+const inputStyle = { //Temporary
+    flexGrow: 1,
+    border: '1px solid gray',
+    borderRadius: "5px",
+    background: 'transparent',
+    outline: 'none',
+    fontSize: '0.875rem',
+    lineHeight: '1.4',
+    color: 'var(--text-color)',
+    padding: 0
+  };
+  
