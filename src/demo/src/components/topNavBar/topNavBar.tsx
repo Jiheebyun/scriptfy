@@ -46,21 +46,31 @@ export const TopNavBar = () => {
     const searchHandler = () => {
         console.log("SEARCH!");
         openOverlay(
-            <div style={{height: "auto", minWidth: "35%", background: "white", borderRadius: "5px", margin: "10px", padding: '20px', display: "flex", justifyContent: 'center', alignItems:'center', flexDirection: "column"}}>
-                <form action="" style={styles.form}>
+            <div style={{
+                    height: "auto", 
+                    minWidth: "35%", 
+                    background: "white",
+                    borderRadius: "5px", 
+                    margin: "10px", 
+                    padding: '20px', 
+                    display: "flex", 
+                    justifyContent: 'flexStart', 
+                    alignItems:'center', 
+                    flexDirection: "column"
+                }}
+            >
+                
+                <div style={{display: "flex", justifyContent:"flexStart"}}>
                     <h2 style={styles.h2}>
                         <span className="entypo-login" style={styles.loginIcon}>
-                        <i className="fa fa-sign-in" />
+                        <IoSearch/>
                         </span>
                         Search
                     </h2>
-
-                    {/* user 아이콘 */}
-                    <span className="entypo-user inputUserIcon" style={styles.inputUserIcon}>
-                        <i className="fa fa-user" />
-                    </span>
-
-                    {/* username input */}
+                    <i className="pi pi-search"></i>
+                </div>
+                <form action="" style={styles.form}>
+                    {/*input */}
                     <input
                         type="text"
                         className="user"
@@ -69,8 +79,10 @@ export const TopNavBar = () => {
                         // :focus, ::placeholder 등을 직접 인라인으로는 적용 불가
                         // 필요 시 onFocus, onBlur 등 JS 이벤트로 동적으로 변경
                     />
-
-                    </form>
+                </form>
+                <div className="DocSearch-container">
+                    <i className="pi pi-spin pi-cog" style={{ fontSize: '2rem' }}></i>
+                </div>
                 <h1 style={{color: "gray"}}>Hello, It is a overlay for the search !</h1>
             </div>
         );
@@ -112,54 +124,20 @@ export const TopNavBar = () => {
 
 const styles = {
     form: {
-      position: 'relative',
-      width: '100%',
-      height: 'auto',
+        position: 'relative',
+        width: '100%',
+        height: 'auto',
     },
     input: {
-      padding: '16px',
-      borderRadius: '7px',
-      border: '1px solid #efefef1f2',
-      background: 'rgba(255,255,255,.2)',
-      display: 'block',
-      margin: '10px',
-      width: '100%',
-      color: 'white',
-      fontSize: '18px',
-      height: '54px',
+        padding: '16px',
+        borderRadius: '7px',
+        border: '1px solid #ddd',
+        background: 'rgba(255,255,255,.2)',
+        display: 'block',
+        margin: '20px 0px',
+        width: '100%',
+        color: '#888888',
+        fontSize: '18px',
+        height: '54px',
     },
-    button: {
-      float: 'right',
-      height: '121px',
-      width: '50px',
-      border: '0px',
-      background: '#e74c3c',
-      borderRadius: '7px',
-      padding: '10px',
-      color: 'white',
-      fontSize: '22px',
-      cursor: 'pointer', // 보통 버튼에 커서 표시
-    },
-    inputUserIcon: {
-      position: 'absolute',
-      top: '68px',
-      right: '80px',
-      color: 'white',
-    },
-    inputPassIcon: {
-      position: 'absolute',
-      top: '136px',
-      right: '80px',
-      color: 'white',
-    },
-    h2: {
-      // h2 기본 스타일
-      fontSize: '1.5rem', 
-      // 필요 시 추가 스타일 ...
-    },
-    loginIcon: {
-      // span.entypo-login에 해당
-      marginRight: '6px', 
-      // 원하는 스타일 추가 ...
-    },
-  };
+};
