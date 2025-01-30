@@ -8,11 +8,7 @@ const MONGO_URI = process.env.MONGO_URI || 'your_default_mongodb_uri';
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(MONGO_URI, {
-    //   useNewUrlParser: true,
-    //   useUnifiedTopology: true,
-      useFindAndModify: false, // Mongoose 6부터는 필요 없음
-    });
+    await mongoose.connect(MONGO_URI);
     console.log('MongoDB 연결 성공');
   } catch (error) {
     console.error('MongoDB 연결 실패:', error);

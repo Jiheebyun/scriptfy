@@ -1,10 +1,13 @@
-// server/src/routes/user.route.ts
+// server/src/routes/product.route.ts
 import { Router } from 'express';
-import { getAllUsers, getUserById } from '../controllers/user.controller';
+import { getAllUsers, getUserById  } from '../controllers/user.controller';
 
 const router = Router();
 
-router.get('/', getAllUsers);     // GET /api/users
-router.get('/:id', getUserById);  // GET /api/users/:id
+// 모든 사용자 조회
+router.get('/', getAllUsers);
+
+// 특정 사용자 조회
+router.get('/:id', getUserById);
 
 export default router;
