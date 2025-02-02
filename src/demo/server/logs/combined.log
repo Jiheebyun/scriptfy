@@ -1,0 +1,6 @@
+2025-02-02 17:15:55 [INFO]: 서버가 포트 4000에서 실행 중입니다.
+2025-02-02 17:16:01 [INFO]: ::1 - - [02/Feb/2025:08:16:01 +0000] "GET /api/user HTTP/1.1" 200 47 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-02 17:16:23 [INFO]: ::1 - - [02/Feb/2025:08:16:23 +0000] "GET /api/user HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-02 17:19:05 [INFO]: ::1 - - [02/Feb/2025:08:19:05 +0000] "GET /api/user HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-02 17:19:10 [INFO]: ::1 - - [02/Feb/2025:08:19:10 +0000] "GET /api/2 HTTP/1.1" 404 144 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-02 17:19:16 [INFO]: ::1 - - [02/Feb/2025:08:19:16 +0000] "GET /api/user/2 HTTP/1.1" 200 28 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"

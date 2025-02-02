@@ -1,0 +1,8 @@
+2025-02-02 17:10:44 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:45:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)

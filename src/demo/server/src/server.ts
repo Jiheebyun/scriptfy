@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(cors());
 
 // 라우트 등록
-app.use('/api', routes); // 모든 라우트 -> /api 하위에 위치
+app.use('/api', routes); // 모든 라우트 -> /api/something 하위에 위치
 
 // 기본 라우트
 app.get('/', (req, res) => {
