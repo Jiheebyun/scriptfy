@@ -30,6 +30,7 @@ app.use('/api', routes); // 모든 라우트 -> /api 하위에 위치
 
 // 기본 라우트
 app.get('/', (req, res) => {
+    
   res.send('서버가 정상적으로 동작 중입니다.');
 });
 
