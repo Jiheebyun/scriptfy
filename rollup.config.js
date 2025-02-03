@@ -4,7 +4,7 @@ import postcss from 'rollup-plugin-postcss';
 export default [
   // React 번들
   {
-    input: 'src/library/index.ts',
+    input: 'src/library/components/react/src/index.ts',
     output: [
       {
         file: 'dist/react/my-ui-library.react.esm.js',
