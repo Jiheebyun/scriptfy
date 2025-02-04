@@ -1,3 +1,4 @@
+import resolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
 import postcss from 'rollup-plugin-postcss';
 
@@ -18,7 +19,8 @@ export default [
       }
     ],
     plugins: [
-      typescript(),
+      resolve(),            // 모듈 해석 플러그인 추가
+      typescript(),         // TypeScript 플러그인
       postcss({
         extensions: ['.scss'],
         extract: 'dist/styles/my-ui-library-react.css',

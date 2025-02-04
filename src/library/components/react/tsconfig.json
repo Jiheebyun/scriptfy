@@ -1,15 +1,18 @@
+// src/library/components/react/tsconfig.json
 {
     "compilerOptions": {
-      "outDir": "dist",
-      "rootDir": "src",
       "target": "ES6",
+      "lib": ["dom", "esnext"],
       "module": "ESNext",
       "jsx": "react",
-      "declaration": true,
       "strict": true,
       "esModuleInterop": true,
-      "moduleResolution": "node"
+      "moduleResolution": "node",
+      "rootDir": "src",
+      "outDir": "dist",
+      "declaration": true
     },
-    "include": ["src/**/*"]
+    "include": ["src/**/*", "rollup.config.mjs"],
+    "exclude": ["node_modules", "dist"]
   }
   
