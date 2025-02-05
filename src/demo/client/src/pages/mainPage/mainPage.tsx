@@ -6,6 +6,7 @@ import { TopNewsBar } from "../../components/topNewsBar/topNewsBar";
 import  LayoutContent  from "../../components/layoutContent/layoutContent";
 import Footer from "../../components/footer/footer";
 
+import  Button  from '@scriptify/react/button'
 
 // import { BottomSection } from "../../../components/bottomSection/bottomSection";
 
@@ -17,6 +18,7 @@ const MainPage = () => {
                 <TopNewsBar/>
                 <TopNavBar/>
                 <LayoutContent/>
+                <Button></Button>
                 <Footer/>
             </div>
         </div>
