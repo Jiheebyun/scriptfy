@@ -9,10 +9,13 @@
       "esModuleInterop": true,
       "moduleResolution": "node",
       "rootDir": "src",
-      "outDir": "dist",
-      "declaration": true
+      "skipLibCheck": true,
+  
+      // 주의! Rollup + @rollup/plugin-typescript를 사용할 때
+      // outDir와 declaration을 동시에 지정하면 충돌 가능
+      "declaration": false
     },
-    "include": ["src/**/*", "rollup.config.mjs"],
+    "include": ["src/**/*"],
     "exclude": ["node_modules", "dist"]
   }
   
