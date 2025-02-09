@@ -1,9 +1,17 @@
 {
-    "name": "@scriptify/react",
-    "version": "1.0.0",
+    "name": "@scriptify_js/react",
+    "version": "1.0.2",
+    "author": "Jihee, Byun <jh910805jh@gamil.com> ",
     "main": "dist/cjs/index.cjs",
     "module": "dist/esm/index.js",
-    "types": "dist/esm/index.d.ts", 
+    "types": "dist/esm/index.d.ts",
+    "description": "A custom React UI library for Scriptify projects",
+    "keywords": [
+        "react",
+        "components",
+        "ui-library",
+        "scriptify"
+    ],
     "exports": {
       ".": {
         "import": "./dist/esm/index.js",

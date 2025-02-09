@@ -6,9 +6,7 @@ import { TopNewsBar } from "../../components/topNewsBar/topNewsBar";
 import  LayoutContent  from "../../components/layoutContent/layoutContent";
 import Footer from "../../components/footer/footer";
 
-import  Button  from '@scriptify/react/button' // 이런 형식으로  import 해야한다.
-// import { Button } from '@scriptify/react/button'
-
+import { Button } from "@scriptify_js/react";
 // import { BottomSection } from "../../../components/bottomSection/bottomSection";
 
 const MainPage = () => {
