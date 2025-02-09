@@ -133,5 +133,14 @@ my-ui-library/
 
 #### 라이브러리 폴더에서 전역링크 생성 
 
-
-
+##### 요약 
+```bash
+# 라이브러리 폴더에서 :: (@scriptify/react) 
+cd scriptfy/src/library/components/react
+npm link
+```
+```bash
+# 데모(최상위) 폴더에서 :: 
+cd scriptfy
+npm link @scriptify/react
+```
