@@ -124,11 +124,8 @@ my-ui-library/
 ### Dev Environment 
 
 1. Library - React 
-- Library Component를 구현하기 위해서 개발자는 작업할수 있는 환경이 필요한데, demo프로젝트에 컴포넌트를 작업하기 위해서 심볼릭 링크를 사용하여 라이브러리는 demo에서 import 할수 있도록 환경 제공
+- Library Component를 구현하기 위해서 개발자는 작업할수 있는 환경이 필요한데, demo프로젝트에 컴포넌트를 작업하기 위해서 심볼릭 링크를 사용하여 al;jsdkjlaskdfjlaks라이브러리는 demo에서 import 할수 있도록 환경 제공
 
 - 최상위 node_modules에서 모듈 확인 : ls -l node_modules/@scriptify
-
-
-
 
 
