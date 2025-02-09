@@ -102,7 +102,7 @@ my-ui-library/
 
 
 
-### 구조와 설정 파일 매칭
+## 구조와 설정 파일 매칭
 
 1. package.json
 - 프로젝트의 최상위 관리 파일로, 의존성 및 스크립트를 관리합니다.
@@ -121,7 +121,7 @@ my-ui-library/
 
 
 
-### Dev Environment 
+## Dev Environment 
 
 1. Library - React 
 - demo 폴더에는 docs 웹 애플리케이션이 존재합니다. 이 애플리케이션은 미리 설치된 React 라이브러리 모듈인 @scriptify_js/react를 import 하여 사용합니다.
