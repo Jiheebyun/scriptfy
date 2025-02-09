@@ -124,23 +124,21 @@ my-ui-library/
 ### Dev Environment 
 
 1. Library - React 
-- Library Component를 구현하기 위해서 개발자는 작업할수 있는 환경이 필요한데, demo프로젝트에 컴포넌트를 작업하기 위해서 심볼릭 링크를 사용하여 al;jsdkjlaskdfjlaks라이브러리는 demo에서 import 할수 있도록 환경 제공
+- demo 폴더에는 docs 웹 애플리케이션이 존재합니다. 이 애플리케이션은 미리 설치된 React 라이브러리 모듈인 @scriptify_js/react를 import 하여 사용합니다.
+```javascript
 
-- 최상위 node_modules에서 모듈 확인 : ls -l node_modules/@scriptify
+// 예시: demo/src/App.jsx
+import React from 'react';
+import { Button } from '@scriptify_js/react';
 
+function App() {
+  return (
+    <div>
+      <h1>Docs Demo</h1>
+      <Button onClick={() => alert('Button clicked!')}>Click Me</Button>
+    </div>
+  );
+}
 
-2.  npm link 절차
-
-#### 라이브러리 폴더에서 전역링크 생성 
-
-##### 요약 
-```bash
-# 라이브러리 폴더에서 :: (@scriptify/react) 
-cd scriptfy/src/library/components/react
-npm link
-```
-```bash
-# 데모(최상위) 폴더에서 :: 
-cd scriptfy
-npm link @scriptify/react
+export default App;
 ```
