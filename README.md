@@ -129,3 +129,9 @@ my-ui-library/
 - 최상위 node_modules에서 모듈 확인 : ls -l node_modules/@scriptify
 
 
+2.  npm link 절차
+
+#### 라이브러리 폴더에서 전역링크 생성 
+
+
+
