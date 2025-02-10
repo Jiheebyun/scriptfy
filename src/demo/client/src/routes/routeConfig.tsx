@@ -38,6 +38,10 @@ const routeConfig: RouteType[] = [
             path: 'autocomplete',
             element: <DocContentIntro />,
           },
+          {//개발환경을 제공 
+            path: 'dev',
+            element: "",
+          },
           // {
           //   // /advanced
           //   path: 'advanced',
