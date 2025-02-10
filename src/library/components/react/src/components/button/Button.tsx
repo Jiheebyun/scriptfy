@@ -1,36 +1,22 @@
-// packages/react/src/MyButton.tsx
-import React, { useState } from 'react';
+// Button.jsx
+import React from "react";
+import "./button.scss";
 
-export interface MyButtonProps {
-  label?: string;
-  onClick?: () => void;
+
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  label: string;
 }
 
-const MyButton: React.FC<MyButtonProps> = ({ label = 'Click me', onClick }) => {
-  const [clicked, setClicked] = useState(false);
-
-  const handleClick = () => {
-    setClicked(!clicked);
-    if (onClick) {
-      onClick();
-    }
-  };
-
+const Button: React.FC<ButtonProps> = ({ label, onClick, className = "", ...props }) => {
   return (
     <button
-      onClick={handleClick}
-      style={{
-        backgroundColor: clicked ? 'green' : 'blue',
-        color: '#fff',
-        border: 'none',
-        borderRadius: '4px',
-        padding: '8px 16px',
-        cursor: 'pointer'
-      }}
+      className={`custom-button ${className}`}
+      onClick={onClick}
+      {...props}
     >
       {label}
     </button>
   );
 };
 
-export default MyButton;
+export default Button;

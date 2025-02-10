@@ -1,0 +1,27 @@
+// CustomButton.scss
+.custom-button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #1976d2; // 기본 primary 색상
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      background-color: #1565c0;
+    }
+    
+    &:active {
+      background-color: #0d47a1;
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.5);
+    }
+  }
+  
