@@ -4,6 +4,7 @@ import LayoutContent from '../components/layoutContent/layoutContent.js';
 import LayoutDoc from '../components/layoutDoc/layoutDoc.js';
 import DocContent from '../components/docContent/docContent.js';
 import DocContentIntro from '../components/docContentIntro/docContentIntro.js';
+import DevComponents from '../pages/devEnvironment/devPage.js';
 
 // 페이지 컴포넌트 레이지 로딩
 const MainPage = lazy(() => import('../pages/mainPage/mainPage.js'));
@@ -38,16 +39,16 @@ const routeConfig: RouteType[] = [
             path: 'autocomplete',
             element: <DocContentIntro />,
           },
-          {//개발환경을 제공 
-            path: 'dev',
-            element: "",
-          },
           // {
           //   // /advanced
           //   path: 'advanced',
           //   element: <AdvancedPage />,
           // },
         ],
+      },
+      {
+        path: '/dev',
+        element: <DevComponents></DevComponents>,
       },
     ]
   },

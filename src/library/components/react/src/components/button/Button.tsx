@@ -4,7 +4,7 @@ import "./button.scss";
 
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  label: string;
+  label?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({ label, onClick, className = "", ...props }) => {

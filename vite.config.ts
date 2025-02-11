@@ -13,7 +13,10 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src/demo/client'),
-      'library': path.resolve(__dirname, 'src/library')
+      'library': path.resolve(__dirname, 'src/library'),
+      // "@components" 별칭이 실제 경로와 일치하도록 설정
+      "@components": path.resolve(__dirname, "src/library/components/react/src/components")
+
     },
   },
   build: {

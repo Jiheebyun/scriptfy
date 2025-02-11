@@ -1,6 +1,6 @@
 import React from "react";
 
-import componentsRegistry from "../../utils/ componentsRegistry";
+import componentsRegistry from "../../utils/componentsRegistry";
 import './docContentComponent.scss';
 
 const DocContentComponent = ({component}) => {
