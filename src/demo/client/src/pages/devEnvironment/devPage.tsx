@@ -1,11 +1,18 @@
 import React from "react"
+import './devPage.scss'
 
 import Button from '@components/button/Button'
 
 const DevComponents = () => {
+
+
     return (
-        <div>
-            <Button></Button>
+        <div className="dev-container">
+            <div>
+
+
+            </div>
+            <Button label="Button"></Button>
 
         </div>
     )
