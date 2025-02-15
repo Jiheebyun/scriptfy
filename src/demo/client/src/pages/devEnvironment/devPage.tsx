@@ -5,14 +5,13 @@ import Button from '@components/button/Button'
 
 const DevComponents = () => {
 
-
+    const btnHandler = () => {
+        console.log("its WORKING")
+    }
     return (
         <div className="dev-container">
-            <div>
 
-
-            </div>
-            <Button label="Button"></Button>
+            <Button label="Button" href="https://react.dev/" onClick={btnHandler}></Button>
 
         </div>
     )
