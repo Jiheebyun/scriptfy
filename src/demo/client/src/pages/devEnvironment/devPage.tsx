@@ -11,7 +11,13 @@ const DevComponents = () => {
     return (
         <div className="dev-container">
 
-            <Button label="Button" href="https://react.dev/" onClick={btnHandler}></Button>
+            <Button 
+                label="Button" 
+                href="https://react.dev/" 
+                onClick={btnHandler}
+                color="blue"
+                style={{backgroundColor: "gray"}}
+            ></Button>
 
         </div>
     )
