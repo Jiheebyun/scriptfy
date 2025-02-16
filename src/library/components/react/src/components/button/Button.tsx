@@ -61,7 +61,7 @@ Parameters
 
     color:(String) - 컬러 속성은 버튼의 컬러만 바로 바꿀수 있다.
         ex: <Button color="blue" />
-        
+
     style:(object) - 버튼의 상세 스타일을 지정할수 있다. color와 style에 background color를 두개의 속성이 지정되면 style의 스타일을 우선으로 적용한다
         ex: <Button style={{backgroundColor:gray}} color: "blue"> **style 우선 적용**
 */

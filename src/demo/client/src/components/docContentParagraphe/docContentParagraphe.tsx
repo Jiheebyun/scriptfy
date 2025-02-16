@@ -4,10 +4,10 @@ import './docContentParagraphe.scss'
 
 
 const DocContentParagraphe = ({content}: any) => {
-
+    console.log(content)
     return (
         <>
-            <p>{content}</p>
+            <p className="doc-paragraphe">{content}</p>
         </>
     )
 }
