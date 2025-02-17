@@ -24,6 +24,8 @@ fs.readdirSync(routesPath).forEach((file) => {
   }
 });
 
+// /api/fileName
+
 export default router;
 
 

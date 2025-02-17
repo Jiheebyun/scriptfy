@@ -42,6 +42,7 @@ const PORT = process.env.PORT || 4000;
 
 connectDB()
   .then(() => {
+    console.log("???????/")
     app.listen(PORT, () => {
       logger.info(`서버가 포트 ${PORT}에서 실행 중입니다.`);
     });
