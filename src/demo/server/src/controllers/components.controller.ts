@@ -27,9 +27,9 @@ export const getComponentsWithSubContents = async (req: Request, res: Response):
 
 export const getComponents = async (req: Request, res: Response): Promise<void> => {
   try {
-    const components = await Components.find({});
-    res.json(components);
-    console.log(components)
+    const componentsData = await Components.find({});
+    res.json(componentsData);
+    console.log(componentsData)
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });
