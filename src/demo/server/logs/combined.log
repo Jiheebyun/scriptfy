@@ -39,3 +39,17 @@
 2025-02-18 20:34:59 [INFO]: ::1 - - [18/Feb/2025:11:34:59 +0000] "GET /api/components/test HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 2025-02-18 20:35:36 [INFO]: 서버가 포트 4000에서 실행 중입니다.
 2025-02-18 20:35:45 [INFO]: ::1 - - [18/Feb/2025:11:35:45 +0000] "GET /api/components/test HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-18 20:40:34 [INFO]: 서버가 포트 4000에서 실행 중입니다.
+2025-02-18 20:40:50 [INFO]: ::1 - - [18/Feb/2025:11:40:50 +0000] "GET /api/components HTTP/1.1" 200 229 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-18 21:08:53 [INFO]: 서버가 포트 4000에서 실행 중입니다.
+2025-02-18 21:08:54 [INFO]: ::1 - - [18/Feb/2025:12:08:54 +0000] "GET /api/components HTTP/1.1" 200 195 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-18 21:08:56 [INFO]: ::1 - - [18/Feb/2025:12:08:56 +0000] "GET /api/components HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-18 21:08:57 [INFO]: ::1 - - [18/Feb/2025:12:08:57 +0000] "GET /api/components HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-18 21:08:58 [INFO]: ::1 - - [18/Feb/2025:12:08:58 +0000] "GET /api/components HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-18 21:08:59 [INFO]: ::1 - - [18/Feb/2025:12:08:59 +0000] "GET /api/components HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-18 21:10:22 [INFO]: ::1 - - [18/Feb/2025:12:10:22 +0000] "GET /api/components HTTP/1.1" 200 152 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-18 21:10:24 [INFO]: ::1 - - [18/Feb/2025:12:10:24 +0000] "GET /api/components HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-18 21:11:40 [INFO]: ::1 - - [18/Feb/2025:12:11:40 +0000] "GET /api/components HTTP/1.1" 200 724 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-18 21:11:41 [INFO]: ::1 - - [18/Feb/2025:12:11:41 +0000] "GET /api/components HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-02-18 21:12:25 [INFO]: 서버가 포트 4000에서 실행 중입니다.
+2025-02-18 21:12:29 [INFO]: ::1 - - [18/Feb/2025:12:12:29 +0000] "GET /api/components HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
