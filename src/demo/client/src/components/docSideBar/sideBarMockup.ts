@@ -284,3 +284,47 @@ export const menuData: MenuItem[] = [
         ]
     },
   ];
+
+  /* MongoDB
+  sideMenu DB format
+
+{
+  "_id": ObjectId("67abc123def4567890123456"),
+  "component_id": ObjectId("679b160ba73becf257db5bee"),
+  "menuTitle": "Getting Started",
+  "menuItems": [
+    { "label": "Installation", "url": "/installation" },
+    { "label": "Configuration", "url": "/configuration" }
+  ]
+},
+
+{
+  "_id": ObjectId("67abc123def4567890123456"),
+  "component_id": ObjectId("679b160ba73becf257db5bee"),
+  "menuTitle": "Components",
+  "menuItems": [
+    { "label": "Button", "url": "/button" },
+    { "label": "input", "url": "/input" }
+  ]
+},
+{
+  "_id": ObjectId("67abc123def4567890123456"),
+  "component_id": ObjectId("679b160ba73becf257db5bee"),
+  "menuTitle": "Theming",
+  "menuItems": [
+    { "label": "example", "url": "/example" },
+    { "label": "example", "url": "/example" }
+  ]
+},
+{
+  "_id": ObjectId("67abc123def4567890123456"),
+  "component_id": ObjectId("679b160ba73becf257db5bee"),
+  "menuTitle": "Hooks",
+  "menuItems": [
+    { "label": "useMountEffect", "url": "/useMountEffect" },
+    { "label": "useEventListener", "url": "/useEventListener" }
+    { "label": "stringValidation", "url": "/stringValidation" }
+  ]
+}
+  
+  */
