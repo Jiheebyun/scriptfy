@@ -292,7 +292,8 @@ export const menuData: MenuItem[] = [
   "_id": ObjectId("67abc123def4567890123456"),
   "component_id": ObjectId("679b160ba73becf257db5bee"),
   "menuTitle": "Getting Started",
-  "menuItems": [
+  "path": "",
+  "children": [
     { "label": "Installation", "url": "/installation" },
     { "label": "Configuration", "url": "/configuration" }
   ]
@@ -301,8 +302,9 @@ export const menuData: MenuItem[] = [
 {
   "_id": ObjectId("67abc123def4567890123456"),
   "component_id": ObjectId("679b160ba73becf257db5bee"),
-  "menuTitle": "Components",
-  "menuItems": [
+  "menuTitle": "Components", 
+  "path": "",
+  "children": [
     { "label": "Button", "url": "/button" },
     { "label": "input", "url": "/input" }
   ]
@@ -311,7 +313,8 @@ export const menuData: MenuItem[] = [
   "_id": ObjectId("67abc123def4567890123456"),
   "component_id": ObjectId("679b160ba73becf257db5bee"),
   "menuTitle": "Theming",
-  "menuItems": [
+  "path": "",
+  "children": [
     { "label": "example", "url": "/example" },
     { "label": "example", "url": "/example" }
   ]
@@ -320,13 +323,12 @@ export const menuData: MenuItem[] = [
   "_id": ObjectId("67abc123def4567890123456"),
   "component_id": ObjectId("679b160ba73becf257db5bee"),
   "menuTitle": "Utilities",
-  "menuItems": [
+  "path": "",
+  "children": [
     { "label": "useMountEffect", "url": "/useMountEffect" },
     { "label": "useEventListener", "url": "/useEventListener" }
     { "label": "stringValidation", "url": "/stringValidation" }
   ]
 }
-  
-
 
   */
