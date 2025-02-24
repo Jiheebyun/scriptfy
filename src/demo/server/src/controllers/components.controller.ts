@@ -24,7 +24,7 @@ export const getComponentsWithSubContents = async (req: Request, res: Response):
       console.error(error);
       res.status(500).json({ error: 'Internal Server Error' });
     }
-  };
+};
 
 export const getComponents = async (req: Request, res: Response): Promise<void> => {
   try {
