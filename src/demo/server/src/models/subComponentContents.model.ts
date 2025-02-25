@@ -1,7 +1,6 @@
 import { Schema, model } from 'mongoose';
 
 export interface ISubComponentContents {
-  // 예시 필드
   title: string;
   description?: string;
 }
