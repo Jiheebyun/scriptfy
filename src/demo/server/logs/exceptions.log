@@ -126,3 +126,203 @@ Error: listen EADDRINUSE: address already in use :::4000
     at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
     at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-25 22:36:49 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-25 22:38:46 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-25 22:39:08 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-25 22:39:19 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-25 22:39:31 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-25 22:40:58 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-25 22:41:03 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-25 22:42:39 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-25 22:42:51 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:13:39 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:26:49 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:30:15 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:30:27 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:30:41 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:34:38 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:35:17 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:35:45 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:35:58 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:37:27 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:38:27 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:40:18 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:41:05 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:41:18 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:41:41 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-02-26 22:42:05 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (/Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/node_modules/express/lib/application.js:635:24)
+    at /Users/jihee/Desktop/scriptify/scriptfy/src/demo/server/src/server.ts:46:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)

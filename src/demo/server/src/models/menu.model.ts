@@ -1,9 +1,16 @@
-import { Schema, model, Types } from 'mongoose';
+import { Schema, model, Types, Document } from 'mongoose';
 
-const menuSchema = new Schema({
-  component_id: { type: Types.ObjectId, ref: 'components' },
-  menuTitle: String,
-  path: String,
+interface IMenu extends Document {
+  component_id: Types.ObjectId;
+  menuTitle: string;
+  path: string;
+}
+
+const menuSchema = new Schema<IMenu>({
+  component_id: { type: Schema.Types.ObjectId, required: true },
+  menuTitle: { type: String, required: true },
+  path: { type: String, default: '' },
 });
 
-export const Menu = model('menu', menuSchema);
+// 한 번만 'Menu' 모델 이름으로 선언하되, 세 번째 인자로 'menu' 컬렉션명 지정
+export const Menu = model<IMenu>('Menu', menuSchema, 'menu');

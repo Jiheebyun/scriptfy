@@ -12,6 +12,8 @@ import path from 'path';
 // 모델 파일: <Resource>.ts (대문자 시작, 예: User.ts, Product.ts)
 // 미들웨어 파일: <middleware>.ts (예: auth.ts, logger.ts)
 
+//api path : /api/<Rsource>는 route 파일에서 / 선언해야한다. 즉 선언한 /는 "/api/<reousrce>" api path가 된다
+
 const router = Router();
 
 const routesPath = path.join(__dirname);
