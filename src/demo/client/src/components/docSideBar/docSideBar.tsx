@@ -2,12 +2,24 @@
 
 import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
-import { MenuItem } from './sideBarMockup';
 
 import './docSideBar.scss';
 
 interface DocSideBarProps {
-    items: MenuItem[];
+    items: MenuData[];
+}
+
+interface MenuChild {
+    label: string;
+    url: string;
+}
+  
+interface MenuData {
+    _id: string; 
+    component_id: string;
+    menuTitle: string;
+    path: string;
+    children: MenuChild[];
 }
 
 const DocSideBar: React.FC<DocSideBarProps> = ({ items }) => {
