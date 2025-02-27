@@ -24,6 +24,8 @@ const LayoutDoc = () => {
     };
   }, []);
 
+  
+
     return (
         <section className="doc-layout">
             <div className="sidebar-left">
