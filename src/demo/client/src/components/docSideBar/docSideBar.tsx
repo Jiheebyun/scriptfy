@@ -12,6 +12,7 @@ interface DocSideBarProps {
 interface MenuChild {
     label: string;
     url: string;
+    _id: string;
 }
   
 interface MenuData {
@@ -39,29 +40,29 @@ const DocSideBar: React.FC<DocSideBarProps> = ({ items }) => {
                 <nav className="sidebar-nav">
                     <ul>
                         {items.map((item) => {
-                            const isItemOpen = openItems[item.idx] || false;
+                            const isItemOpen = openItems[item._id] || false;
                             const hasChildren = item.children && item.children.length > 0;
                             return (
-                                <li key={item.idx} className="menu-item">
+                                <li key={item._id} className="menu-item">
                                     <button 
                                         className="menu-button"  
-                                        onClick={() => toggleSubmenu(item.idx)}
+                                        onClick={() => toggleSubmenu(item._id)}
                                         aria-expanded={isItemOpen}
                                     >
-                                        {item.title}
+                                        {item.menuTitle}
                                         {hasChildren && (
                                             <span className={`arrow ${isItemOpen ? 'open' : ''}`}></span>
                                         )}
                                     </button>
                                     <ul className={`submenu ${isItemOpen ? 'open' : ''}`}>
                                         {item.children && item.children.map((child) => (
-                                            <li key={child.idx} className="submenu-item">
-                                                {child.path ? (
-                                                    <Link to={child.path} className="submenu-link">
-                                                        {child.title}
+                                            <li key={child._id} className="submenu-item">
+                                                {child.url ? (
+                                                    <Link to={child.url} className="submenu-link">
+                                                        {child.label}
                                                     </Link>
                                                 ) : (
-                                                    <span className="submenu-text">{child.title}</span>
+                                                    <span className="submenu-text">{child.label}</span>
                                                 )}
                                             </li>
                                         ))}
