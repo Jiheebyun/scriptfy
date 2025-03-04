@@ -180,3 +180,6 @@
 2025-03-01 00:19:09 [INFO]: ::1 - - [28/Feb/2025:15:19:09 +0000] "GET /api/menu HTTP/1.1" 304 - "http://localhost:3002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 2025-03-01 00:21:12 [INFO]: ::1 - - [28/Feb/2025:15:21:12 +0000] "GET /api/menu HTTP/1.1" 304 - "http://localhost:3002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 2025-03-01 00:21:12 [INFO]: ::1 - - [28/Feb/2025:15:21:12 +0000] "GET /api/menu HTTP/1.1" 304 - "http://localhost:3002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-03-04 22:01:14 [INFO]: 서버가 포트 4000에서 실행 중입니다.
+2025-03-04 22:01:20 [INFO]: ::1 - - [04/Mar/2025:13:01:20 +0000] "GET /api/menu HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+2025-03-04 22:01:20 [INFO]: ::1 - - [04/Mar/2025:13:01:20 +0000] "GET /api/menu HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"

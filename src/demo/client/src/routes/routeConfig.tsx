@@ -37,7 +37,7 @@ const routeConfig: RouteType[] = [
           },
           {
             path: 'autocomplete',
-            element: <DocContentIntro />,
+            element:'',
           },
           // {
           //   // /advanced
