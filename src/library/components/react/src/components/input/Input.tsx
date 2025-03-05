@@ -13,3 +13,5 @@ const Input = ({
 }
 
 export default Input
+
+// placeholder, size, disable, required
