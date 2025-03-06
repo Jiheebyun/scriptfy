@@ -6,12 +6,15 @@ const Input = ({
 
 }) => {
     return (
-        <input>
-
-        </input>
+        <>
+             <div className="input-group">
+                <i className='bx bxs-user'></i>
+                <input type="text" placeholder="Username"/>
+            </div>
+        </>
     )
 }
 
 export default Input
 
-// placeholder, size, disable, required
+// placeholder, size, disable, required, type, background

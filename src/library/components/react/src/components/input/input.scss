@@ -1,0 +1,28 @@
+.input-group {
+    position: relative;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: #715959;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    background-color: #e9e9e9;
+    border-radius: .5rem;
+    border: 0.125rem solid #fd5200;
+    outline: none;
+}
+
+.input-group input:focus {
+    border: 0.125rem solid #b73a00;
+}

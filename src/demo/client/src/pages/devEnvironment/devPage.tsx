@@ -3,6 +3,19 @@ import './devPage.scss'
 
 import Button from '@components/button/Button'
 
+
+
+const Input = ({
+
+}) => {
+    return (
+        <input placeholder="hi">
+
+        </input>
+    )
+}
+
+
 const DevComponents = () => {
 
     const btnHandler = () => {
@@ -18,6 +31,8 @@ const DevComponents = () => {
                 color="blue"
                 style={{backgroundColor: "gray"}}
             ></Button>
+
+            <Input></Input>
 
         </div>
     )
