@@ -2,19 +2,32 @@ import React from "react";
 import "./input.scss";
 
 
-const Input = ({
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+    placeholder?: string,
+    type?: string,
+
+
+}
+
+const SfInput: React.FC<InputProps> = ({
+    type = "text",
+    placeholder,
 
 }) => {
     return (
         <>
              <div className="input-group">
                 <i className='bx bxs-user'></i>
-                <input type="text" placeholder="Username"/>
+                <input 
+                    type={type} 
+                    placeholder={placeholder}
+
+                />
             </div>
         </>
     )
 }
 
-export default Input
+export default SfInput
 
 // placeholder, size, disable, required, type, background

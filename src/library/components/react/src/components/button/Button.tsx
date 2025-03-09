@@ -11,7 +11,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   style?: React.CSSProperties;  // 사용자 스타일
 }
 
-const Button: React.FC<ButtonProps> = (
+const SfButton: React.FC<ButtonProps> = (
     {   
         label, 
         onClick, 
@@ -42,7 +42,7 @@ const Button: React.FC<ButtonProps> = (
     );
 };
 
-export default Button;
+export default SfButton;
 
 
 /*

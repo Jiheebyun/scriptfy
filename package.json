@@ -24,7 +24,7 @@
   "license": "ISC",
   "dependencies": {
     "@codemirror/lang-javascript": "^6.2.2",
-    "@scriptify_js/react": "^1.0.2",
+    "@scriptify_js/react": "^1.0.5",
     "@uiw/codemirror-theme-dracula": "^4.23.7",
     "@uiw/react-codemirror": "^4.23.7",
     "react": "^18.3.1",

@@ -1,19 +1,11 @@
 import React from "react"
 import './devPage.scss'
 
-import Button from '@components/button/Button'
+import SfButton from '@components/button/Button'
+import SfInput from '@components/input/Input'
 
 
 
-const Input = ({
-
-}) => {
-    return (
-        <input placeholder="hi">
-
-        </input>
-    )
-}
 
 
 const DevComponents = () => {
@@ -24,15 +16,15 @@ const DevComponents = () => {
     return (
         <div className="dev-container">
 
-            <Button 
+            <SfButton 
                 label="Button" 
                 href="https://react.dev/" 
                 onClick={btnHandler}
                 color="blue"
                 style={{backgroundColor: "gray"}}
-            ></Button>
+            ></SfButton>
 
-            <Input></Input>
+            <SfInput></SfInput>
 
         </div>
     )
