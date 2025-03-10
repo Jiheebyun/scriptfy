@@ -30,4 +30,4 @@ const SfInput: React.FC<InputProps> = ({
 
 export default SfInput
 
-// placeholder, size, disable, required, type, background
+// placeholder, size, disable, required, type, background, onChange,
