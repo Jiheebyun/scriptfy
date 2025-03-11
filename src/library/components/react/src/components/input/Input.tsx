@@ -1,33 +1,28 @@
 import React from "react";
 import "./input.scss";
 
-
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-    placeholder?: string,
-    type?: string,
-
-
+  placeholder?: string;
+  type?: string;
+  iconClassName?: string; 
 }
 
 const SfInput: React.FC<InputProps> = ({
-    type = "text",
-    placeholder,
-
+  type = "text",
+  placeholder,
+  iconClassName = 'bx bxs-user', // 아이콘을 제공할수 있게 만드면 어떨까
+  ...rest // 나머지 input 속성들 (value, onChange, disabled 등)
 }) => {
-    return (
-        <>
-             <div className="input-group">
-                <i className='bx bxs-user'></i>
-                <input 
-                    type={type} 
-                    placeholder={placeholder}
+  return (
+    <div className="input-group">
+      <i className={iconClassName}></i>
+      <input 
+        type={type} 
+        placeholder={placeholder}
+        {...rest}
+      />
+    </div>
+  );
+};
 
-                />
-            </div>
-        </>
-    )
-}
-
-export default SfInput
-
-// placeholder, size, disable, required, type, background, onChange,
+export default SfInput;
