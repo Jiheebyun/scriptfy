@@ -5,6 +5,7 @@ import { IoSearch } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import './topNavBar.scss';
 import { color } from "@uiw/react-codemirror";
+import { Link } from "react-router-dom";
 
 export const TopNavBar = () => {
     const { isOpen, openOverlay, closeOverlay } = useContext(OverlayContext);
@@ -94,7 +95,7 @@ export const TopNavBar = () => {
             <div className={`layout-top-bar ${isScrolled ? "layout-top-bar--scrolled" : ""}`}>
                 <div className="top-menu">
                     <div className="logo-container">
-                        <img src={`${imagePath}logo.png`} alt="logo"></img>
+                        <Link to="/"><img src={`${imagePath}logo.png`} alt="logo"></img></Link>
                     </div>
                     <div className="icons-container">
                         <ul>
