@@ -2,8 +2,10 @@ import React from "react"
 import './devPage.scss'
 
 import SfButton from '@components/button/Button'
-import SfInput from '@components/input/Input'
+// import SfInput from '@components/input/Input'
 
+
+import SfInput from '../../../../../library/components/react/src/components/input/Input'
 
 
 
@@ -24,7 +26,10 @@ const DevComponents = () => {
                 style={{backgroundColor: "gray"}}
             ></SfButton>
 
-            <SfInput></SfInput>
+            <SfInput 
+                isSearch={true}
+                searchData={['aa','aaa','aaaa', 'bb','bbb']}    
+            ></SfInput>
 
         </div>
     )
