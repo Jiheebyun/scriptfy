@@ -1,11 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 import { OverlayContext } from "../../contexts/OverlayContext";
 import { FaGithub } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import './topNavBar.scss';
-import { color } from "@uiw/react-codemirror";
-import { Link } from "react-router-dom";
+
+
 
 export const TopNavBar = () => {
     const { isOpen, openOverlay, closeOverlay } = useContext(OverlayContext);
