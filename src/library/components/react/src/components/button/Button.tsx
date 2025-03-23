@@ -29,7 +29,7 @@ const SfButton: React.FC<ButtonProps> = (
 
     return (
         <button
-            className = {`custom-button ${className}`}
+            className = {`sf-button ${className}`}
             onClick = {onClick}
             style = {finalStyle} 
             {...props} 

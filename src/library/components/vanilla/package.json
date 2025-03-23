@@ -17,15 +17,12 @@
         "import": "./dist/esm/index.js",
         "require": "./dist/cjs/index.cjs",
         "types": "./dist/esm/index.d.ts"
-      },
-      "./button": {
-        "import": "./dist/esm/components/button/Button.js",
-        "require": "./dist/cjs/components/button/Button.cjs",
-        "types": "./dist/esm/components/button/Button.d.ts"
       }
     },
     "scripts": {
-      "build": "npm run build:rollup && npm run build:types",
+      "generate:index": "node src/scripts/generateIndex.js",
+      "build": "npm run generate:index && npm run build:rollup && npm run build:types",
+  
       "build:rollup": "rollup -c rollup.config.mjs",
       "build:types": "tsc --project tsconfig.types.json"
     }
