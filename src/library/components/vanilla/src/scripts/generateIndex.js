@@ -49,9 +49,9 @@ function walkDir(dirPath, basePath) {
 
 /**
  * 실제로 index.js 파일을 생성하는 메인 함수
- * - foldersToScan 안의 폴더를 각각 탐색하여 exportLines를 누적
- * - 최종 결과를 src/index.js에 기록
- * - 기존에 있던 index.js는 .bak로 백업(옵션)
+ * foldersToScan 안의 폴더를 각각 탐색하여 exportLines를 누적
+ * 최종 결과를 src/index.js에 기록
+ * 기존에 있던 index.js는 .bak로 백업(옵션)
  */
 function generateIndex() {
   try {

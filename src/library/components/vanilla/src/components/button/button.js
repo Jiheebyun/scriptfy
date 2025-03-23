@@ -18,7 +18,6 @@ export class SfButton {
       ...props,
       label: props.label ?? 'Default Button',
       disabled: props.disabled ?? false,
-      // 사용자가 별도 className을 주지 않으면 기본으로 "sf-button" 적용
       className: props.className ?? 'sf-button',
     };
     this.element = this.createElement();
