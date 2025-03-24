@@ -128,6 +128,9 @@ my-ui-library/
 - docs웹 페이지에서 /dev url로 접근하게되면 모듈을 가져와 확인 또는 개발 할수 있는 환경을 별로도 제공 (해당 페이지를 웹 어플리케이션이 배포할때 제외)
 ```javascript
 
+2. Library - vanilla javascript
+- react와 동일
+
 // 예시: demo/src/App.jsx
 import React from 'react';
 import { Button } from '@scriptify_js/react';
