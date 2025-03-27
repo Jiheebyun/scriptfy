@@ -6,8 +6,22 @@
 // 
 
 export class SfInput {
-    constructor(props) {
-
+    constructor(
+        type = "text",
+        placeholder = "",
+        isSearch = false,
+        searchData = [],
+        iconClassName = "input",
+        onChange,
+        ...rest
+    ) {
+        this.type = type,
+        this.placeholder = placeholder
+        this.isSearch = isSearch,
+        this.searchData = searchData,
+        this.iconClassName = iconClassName,
+        this.onChange,
+        this.rest = rest
     }
 
     createElement() {
