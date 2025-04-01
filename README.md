@@ -155,6 +155,8 @@ export default App;
 
 
 
-
+- 이번주 TODO 
+- vanilla library - input 마무리 
+- 새로운 컴포넌트 추가  
 
 
