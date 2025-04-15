@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "allowJs": true,
+      "checkJs": true,
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "outDir": "dist/esm"
+    },
+    "include": ["src/**/*"]
+  }
+  
