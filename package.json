@@ -25,6 +25,7 @@
   "dependencies": {
     "@codemirror/lang-javascript": "^6.2.2",
     "@scriptify_js/react": "^1.0.5",
+    "@scriptify_js/vanilla": "^1.0.1",
     "@uiw/codemirror-theme-dracula": "^4.23.7",
     "@uiw/react-codemirror": "^4.23.7",
     "react": "^18.3.1",

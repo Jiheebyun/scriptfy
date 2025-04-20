@@ -1,2 +1,2 @@
-export * from './components/button/Button.js';
+export * from './components/button/button.js';
 export * from './components/input/Input.js';
