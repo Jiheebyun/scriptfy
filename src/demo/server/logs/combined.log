@@ -127,3 +127,10 @@
 2025-02-26 22:37:27 [INFO]: 서버가 포트 4000에서 실행 중입니다.
 2025-02-26 22:38:27 [INFO]: 서버가 포트 4000에서 실행 중입니다.
 2025-02-26 22:38:41 [INFO]: ::1 - - [26/Feb/2025:13:38:41 +0000] "GET /api/menu HTTP/1.1" 404 147 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-04-15 22:17:23 [INFO]: 서버가 포트 4000에서 실행 중입니다.
+2025-04-15 22:17:24 [INFO]: ::1 - - [15/Apr/2025:13:17:24 +0000] "GET /api/menu HTTP/1.1" 200 1091 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-15 22:17:25 [INFO]: ::1 - - [15/Apr/2025:13:17:25 +0000] "GET /api/menu HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-15 22:17:30 [INFO]: ::1 - - [15/Apr/2025:13:17:30 +0000] "GET /api/menu HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-15 22:17:30 [INFO]: ::1 - - [15/Apr/2025:13:17:30 +0000] "GET /api/menu HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-15 22:17:40 [INFO]: ::1 - - [15/Apr/2025:13:17:40 +0000] "GET /api/menu HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+2025-04-15 22:17:40 [INFO]: ::1 - - [15/Apr/2025:13:17:40 +0000] "GET /api/menu HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"

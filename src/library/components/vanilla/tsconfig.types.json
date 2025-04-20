@@ -1,11 +1,19 @@
 {
     "compilerOptions": {
       "allowJs": true,
-      "checkJs": true,
+      "checkJs": false,
+  
       "declaration": true,
       "emitDeclarationOnly": true,
+      "rootDir": "src",
       "outDir": "dist/esm"
     },
-    "include": ["src/**/*"]
+    "exclude": [
+      "node_modules",
+      "dist",
+      "src/scripts", // generateIndex.js
+      "rollup.config.mjs",
+      "**/*.scss"
+    ]
   }
   

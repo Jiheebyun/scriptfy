@@ -1,5 +1,5 @@
 // src/components/SfButton.js
-import './SfButton.scss';
+import './button.scss';
 
 /**
  * @typedef {object} SfButtonProps
