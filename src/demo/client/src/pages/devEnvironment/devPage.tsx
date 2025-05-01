@@ -13,24 +13,27 @@ import { SfButton, SfInput } from '@scriptify_js/vanilla';
 
 const DevComponents = () => {
 
-    const btnHandler = () => {
-        console.log("its WORKING")
-    }
+  const btnHandler = () => {
+    console.log("its WORKING")
+  }
 
   const containerRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
-    // ② null 체크
     if (!containerRef.current) return
 
     const btn = new SfButton({
       label: 'React 연동 버튼',
       onClick: () => alert('클릭!'),
     })
-
-    // 👇 지금은 current가 HTMLDivElement 로 좁혀진 상태라 OK
     btn.mount(containerRef.current)
+
+    const input = new SfInput({
+
+    })
+    input.mount(containerRef.current)
   }, [])
+  
     return (
         <div className="dev-container">
             <div ref={containerRef}></div>
@@ -48,8 +51,8 @@ const DevComponents = () => {
             ></SfInput> */}
 
         </div>
+        
     )
-    
 }
 
 export default DevComponents

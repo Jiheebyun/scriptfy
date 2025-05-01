@@ -24,27 +24,36 @@ const exportLines = [];
  * @param {string} basePath - 기준이 되는 경로 (예: /project/src), export 경로 계산 시 사용
  */
 function walkDir(dirPath, basePath) {
-  const entries = fs.readdirSync(dirPath, { withFileTypes: true });
+    const entries = fs.readdirSync(dirPath, { withFileTypes: true });
 
-  for (const entry of entries) {
-    const fullPath = path.join(dirPath, entry.name);
+    for (const entry of entries) {
+        const full = path.join(dirPath, entry.name);
 
-    if (entry.isDirectory()) {
-      // 디렉터리라면 재귀적으로 들어가서 스캔
-      walkDir(fullPath, basePath);
-    } else if (entry.isFile()) {
-      // .js 파일만 처리, 그 외 (.test.js, .d.ts 등) 제외
-      if (
-        entry.name.endsWith('.js') &&
-        !entry.name.endsWith('.test.js') &&
-        !entry.name.endsWith('.d.ts')
-      ) {
-        // basePath를 기준으로 한 상대 경로를 export 구문에 사용
-        const relativePath = './' + path.relative(basePath, fullPath).replace(/\\/g, '/');
-        exportLines.push(`export * from '${relativePath}';`);
-      }
+        if (entry.isDirectory()) {
+          walkDir(full, basePath);           // 하위 폴더 재귀
+          continue;
+        }
+
+        if (
+          entry.isFile() &&
+          entry.name.toLowerCase().endsWith('.js') &&
+          !entry.name.includes('.test.') &&
+          !entry.name.endsWith('.d.ts')
+        ) {
+          /* import 경로 (.ts → .js 치환 필요 없으면 그대로) */
+          const rel = './' + path.relative(basePath, full).replace(/\\/g, '/');
+
+          /* 2) 폴더 이름 → PascalCase → 'Sf' 접두어 */
+          const folder = path.basename(path.dirname(full));       // 'button'
+          const alias  = `Sf${folder.charAt(0).toUpperCase()}${folder.slice(1)}`; // 'SfButton'
+
+          /* 3) 이미 파일 안에서 named export 된 클래스를 그대로 재-export */
+          exportLines.push(`export { ${alias} } from '${rel}';`);
+
+          /* (선택) 파일에 추가 유틸·상수가 있으면 한 줄 더 활성화 */
+          // exportLines.push(`export * from '${rel}';`);
+        }
     }
-  }
 }
 
 /**

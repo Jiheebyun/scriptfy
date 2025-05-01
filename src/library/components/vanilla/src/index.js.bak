@@ -1,2 +1,2 @@
-export * from './components/button/Button.js';
-export * from './components/input/Input.js';
+export { SfButton } from './components/button/button.js';
+export { SfInput } from './components/input/input.js';
