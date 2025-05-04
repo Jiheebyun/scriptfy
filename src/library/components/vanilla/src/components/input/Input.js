@@ -9,6 +9,7 @@
  * @property {string}  [placeholder=""]            - placeholder 텍스트
  * @property {boolean} [isSearch=false]            - true면 검색 모드 활성 (자동완성 목록 표시)
  * @property {string[]} [searchData=[]]            - 검색 대상 데이터 (문자열 배열)
+ * @property {number}   [maxResults=5]               - 표시할 최대 후보 수
  * @property {string}  [iconClassName="bx bxs-user"] - 아이콘 클래스 (예: "bx bxs-search")
  * @property {(e: InputEvent) => void} [onChange]  - input 값 변경 시 호출될 콜백
  */
