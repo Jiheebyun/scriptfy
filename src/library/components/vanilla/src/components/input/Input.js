@@ -21,20 +21,22 @@ export class SfInput {
         placeholder = '',
         isSearch = false,
         searchData = [],
+        maxSearchResults = 5,
         iconClassName = 'bx bxs-user',
         onChange,
         ...rest
     } = {}) {
-        this.type         = type;
-        this.placeholder  = placeholder;
-        this.isSearch     = isSearch;
-        this.searchData   = searchData;
+        this.type = type;
+        this.placeholder = placeholder;
+        this.isSearch = isSearch;
+        this.searchData = searchData;
+        this.maxSearchResults = maxSearchResults
         this.iconClassName = iconClassName;
-        this.onChange     = onChange;
-        this.rest         = rest;   // 필요시 추가 속성 저장
+        this.onChange = onChange;
+        this.rest = rest;   // 필요시 추가 속성 저장
     
         /* 내부 상태 (React useState 대체) */
-        this.keyword         = '';
+        this.keyword = '';
         this.filteredResults = [];
     
         /* DOM 참조 */
