@@ -3,9 +3,10 @@ import './devPage.scss'
 
 // import SfButton from '@components/button/Button'
 // import SfInput from '@components/input/Input'
+
+
 import { SfButton } from '@scriptify_js/vanilla';
-
-
+// @ts-ignore  // 경고만 잠재움
 import { SfInput } from "../../../../../library/components/vanilla/src/components/input/Input.js"
 
 
