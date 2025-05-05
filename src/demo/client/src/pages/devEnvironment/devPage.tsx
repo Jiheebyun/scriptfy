@@ -3,10 +3,10 @@ import './devPage.scss'
 
 // import SfButton from '@components/button/Button'
 // import SfInput from '@components/input/Input'
-import { SfButton, SfInput } from '@scriptify_js/vanilla';
+import { SfButton } from '@scriptify_js/vanilla';
 
 
-// import SfInput from '../../../../../library/components/react/src/components/input/Input'
+import { SfInput } from "../../../../../library/components/vanilla/src/components/input/Input.js"
 
 
 
@@ -28,9 +28,13 @@ const DevComponents = () => {
     })
     btn.mount(containerRef.current)
 
+    console.log(SfInput)
     const input = new SfInput({
-
+      placeholder : 'Search name',
+      isSearch    : true,
+      searchData  : ['Alice', 'Bob', 'Charlie']
     })
+    console.log(input)
     input.mount(containerRef.current)
   }, [])
   

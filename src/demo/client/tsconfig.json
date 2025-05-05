@@ -1,5 +1,10 @@
 {
   "files": [],
+  "compilerOptions":{
+    "allowJs": true,          // JS 파일 import 허용
+    "checkJs": false,         // JS 내부까지 타입체크 안 함
+    "baseUrl": "./src",       // 모듈 해석 기준 경로 (있다면)    
+  },
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
