@@ -1,12 +1,15 @@
 import React from "react";
 
 
+export interface KanbanProps {
+    items: string[];
+    onChange?: (next: string[]) => void;
+}
 
-const KanbanBoard = () => {
+export const KanbanBoard = () => {
 
     return ( 
         <></>
     )
 }
 
-export default KanbanBoard

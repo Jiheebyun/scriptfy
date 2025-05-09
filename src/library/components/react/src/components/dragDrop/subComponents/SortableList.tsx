@@ -1,12 +1,15 @@
 import React from "react";
 
 
+export interface SortableProps {
+    items: string[];
+    onChange?: (next: string[]) => void;
+}
 
-const SortableList = () => {
+export const SortableList = () => {
 
     return ( 
         <></>
     )
 }
 
-export default SortableList

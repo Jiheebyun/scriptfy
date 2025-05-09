@@ -1,12 +1,14 @@
 import React from "react";
 
+export interface UploadProps {
+    items: string[];
+    onChange?: (next: string[]) => void;
+}
 
-
-const FileUpload = () => {
+export const FileUpload = () => {
 
     return ( 
         <></>
     )
 }
 
-export default FileUpload
