@@ -15,7 +15,8 @@ export interface KanbanProps {
 //     {title: On Hold, key: hold , color: blue}, 
 //     {title: waiting for Details, key: details, color: purple} 
 // ]
-// kanbanCard: [{} ,{} ,{}, {}, {}, {}, {}]
+// kanbanCard: [{title: this is test 1, belongTo: progress, color: yellow } , { title: this is test2, belongTo: progress } ,
+// {}, {}, {}, {}, {}]
 export const KanbanBoard = () => {
     // Todo: How many Kanbanboard you want to create
     //       kanbanBoard : [{title :  ,key: },{title : , key: },{title : , key: }] 
