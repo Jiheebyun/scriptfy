@@ -1,7 +1,7 @@
 // SfDragDrop.tsx
 import React from 'react';
 import { SortableList, type SortableProps } from './subComponents/SortableList';
-import { KanbanBoard,  type KanbanProps  } from './subComponents/KanbanBoard';
+import { KanbanBoard,  type KanbanProps  } from './subComponents/kanbanBoard/KanbanBoard';
 import { FreeCanvas,   type FreeProps    } from './subComponents/FreeCanvas';
 import { FileUpload,   type UploadProps  } from './subComponents/FileUpload';
 

@@ -1,5 +1,6 @@
 import React from "react";
 
+import "./kanbanBoard.scss"
 
 export interface KanbanProps {
     items: string[];
@@ -22,11 +23,29 @@ export const KanbanBoard = () => {
     //       kanbanBoard : [{title :  ,key: },{title : , key: },{title : , key: }] 
     //       kanbanCard  : [{title :  , belongTo: KanbanBoardkey,  }]
 
+    
 
-    // 
 
     return ( 
-        <></>
+        <div className="sf-kanban-board-layout">
+            <div className="sf-kanban-board-container">
+                <div className="kanban-board-line">
+
+                </div>
+                <div className="kanban-board-content">
+                    <div className="kanban-board-title">
+
+                    </div>
+                    <div className="kanban-board-options">
+
+                    </div>
+                </div>
+            </div>
+
+            <div className="sf-kanban-card-container">
+
+            </div>
+        </div>
     )
 }
 
