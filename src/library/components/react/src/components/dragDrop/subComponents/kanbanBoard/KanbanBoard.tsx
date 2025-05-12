@@ -24,7 +24,8 @@ export const KanbanBoard = () => {
     //       kanbanCard  : [{title :  , belongTo: KanbanBoardkey,  }]
 
     
-
+    // kanban background color를 지정할수 있어야함
+    // 
 
     return ( 
         <div className="sf-kanban-board-layout">
