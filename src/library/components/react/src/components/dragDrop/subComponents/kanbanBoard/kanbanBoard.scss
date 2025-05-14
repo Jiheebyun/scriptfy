@@ -1,6 +1,8 @@
 
 
 
-.sf-kanban-board-container {
-
+.sf-kanban-layout {
+    width: 900px;
+    height: 800px;
+    background-color: var(--layout-bg-color, #eeeeee); // 두 번째 인수는 기본값;
 }

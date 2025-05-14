@@ -18,7 +18,10 @@ export interface KanbanProps {
 // ]
 // kanbanCard: [{title: this is test 1, belongTo: progress, color: yellow } , { title: this is test2, belongTo: progress } ,
 // {}, {}, {}, {}, {}]
-export const KanbanBoard = () => {
+export const KanbanBoard = ({
+    layoutColor = '#dcdcdc',
+
+}: any) => {
     // Todo: How many Kanbanboard you want to create
     //       kanbanBoard : [{title :  ,key: },{title : , key: },{title : , key: }] 
     //       kanbanCard  : [{title :  , belongTo: KanbanBoardkey,  }]
@@ -26,9 +29,17 @@ export const KanbanBoard = () => {
     
     // kanban background color를 지정할수 있어야함
     // 
+    const style: React.CSSProperties = {
+        '--layout-bg-color': layoutColor, 
 
+    } as React.CSSProperties;       
+
+
+    
     return ( 
-        <div className="sf-kanban-layout">
+        <div className="sf-kanban-layout"
+            style={style}    
+        >
             <div className="sf-kanban-container">
                 <div className="sf-kanban-board-container">
                     <div className="kanban-board-line">
