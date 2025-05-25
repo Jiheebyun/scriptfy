@@ -19,7 +19,7 @@ export interface KanbanProps {
 // kanbanCard: [{title: this is test 1, belongTo: progress, color: yellow } , { title: this is test2, belongTo: progress } ,
 // {}, {}, {}, {}, {}]
 export const KanbanBoard = ({
-    layoutColor = '#dcdcdc',
+    layoutColor = '#dadada',
 
 }: any) => {
     // Todo: How many Kanbanboard you want to create
@@ -35,16 +35,17 @@ export const KanbanBoard = ({
     } as React.CSSProperties;       
 
 
-    
+
     return ( 
         <div className="sf-kanban-layout"
             style={style}    
         >
             <div className="sf-kanban-container">
+                {/* Kanban board */}
                 <div className="sf-kanban-board-container">
-                    <div className="kanban-board-line">
-
+                    <div className="kanban-board-top-line">
                     </div>
+                    
                     <div className="kanban-board-content">
                         <div className="kanban-board-title">
 
@@ -54,7 +55,7 @@ export const KanbanBoard = ({
                         </div>
                     </div>
                 </div>
-
+                {/* Kanban card */}
                 <div className="sf-kanban-card-container">
 
                 </div>
