@@ -37,6 +37,7 @@ export const KanbanBoard = ({
 
     // TODO - 보드 데이터와 카드 데이터를 나눠야함. 
     // TODO - 보드 css 작업
+    // TODO - 카드 컴포넌트를 분리
     const [boards, setBoards] = useState({
         progress: [
             { id: 'c1', title: 'Login UI' },
