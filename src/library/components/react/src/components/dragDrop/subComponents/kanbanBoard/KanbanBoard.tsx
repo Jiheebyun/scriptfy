@@ -20,6 +20,15 @@ export interface KanbanProps {
 // {}, {}, {}, {}, {}]
 export const KanbanBoard = ({
     layoutColor = '#dadada',
+    data = {
+        progress: [
+            { id: 'c1', title: 'Login UI' },
+            { id: 'c2', title: 'Auth flow' },
+            { id: 'c3', title: 'Dashboard' },
+        ],
+        hold: [{ id: 'c4', title: 'API Spec' }],
+        details: [],
+    },
 
 }: any) => {
     // Todo: How many Kanbanboard you want to create
@@ -38,15 +47,7 @@ export const KanbanBoard = ({
     // TODO - 보드 데이터와 카드 데이터를 나눠야함. 
     // TODO - 보드 css 작업
     // TODO - 카드 컴포넌트를 분리
-    const [boards, setBoards] = useState({
-        progress: [
-            { id: 'c1', title: 'Login UI' },
-            { id: 'c2', title: 'Auth flow' },
-            { id: 'c3', title: 'Dashboard' },
-        ],
-        hold: [{ id: 'c4', title: 'API Spec' }],
-        details: [],
-    });
+    const [boards, setBoards] = useState(data);
 
     /** 현재 드롭 예정 위치 { boardId, index } */
     const overRef = useRef(null);
@@ -57,8 +58,8 @@ export const KanbanBoard = ({
         overRef.current = { boardId, index };
         setIndicator({ boardId, index });
     };
-
-
+    console.log('overRef')
+    console.log(overRef)
     // 드래그 이벤트 
     const handleDragStart = (e, boardId, cardId) => {
         e.dataTransfer.setData('text/plain', JSON.stringify({ boardId, cardId }));
