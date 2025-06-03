@@ -125,6 +125,9 @@ export const KanbanBoard = ({
     };
 
     const renderBoardContent = (boardId, cards) => {
+        if (cards.length === 0) {
+            return <div className="no-data-card-container">No DATA</div>
+        }
         const nodes = [];
         for (let i = 0; i <= cards.length; i += 1) {
             const active = indicator && indicator.boardId === boardId && indicator.index === i;
