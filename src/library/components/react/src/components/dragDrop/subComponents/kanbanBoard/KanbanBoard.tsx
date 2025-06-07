@@ -167,7 +167,10 @@ export const KanbanBoard = ({
                     <div className="sf-kanban-board-container">
                         <div className="kanban-board-top-line" />
                         <div className="kanban-board-content">
-                            <div className="kanban-board-title">{boardId}</div>
+                            <div className="kanban-board-title"><p>{boardId}</p></div>
+                            <div className="kanban-board-detail">
+                                
+                            </div>
                         </div>
                     </div>
                     {renderBoardContent(boardId, cards)}
