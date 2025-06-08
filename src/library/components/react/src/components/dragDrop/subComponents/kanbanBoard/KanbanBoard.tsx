@@ -1,6 +1,10 @@
 import React from "react";
 import { useState, useRef } from "react";
+import { BsArrowDown } from "react-icons/bs";
+import { GoPlusCircle } from "react-icons/go";
+
 import "./kanbanBoard.scss"
+
 
 export interface KanbanProps {
     items: string[];
@@ -156,6 +160,7 @@ export const KanbanBoard = ({
         return nodes;
     };
 
+
     return (
         <div className="sf-kanban-layout" onDrop={handleDrop}>
             {Object.entries(boards).map(([boardId, cards]) => (
@@ -169,7 +174,16 @@ export const KanbanBoard = ({
                         <div className="kanban-board-content">
                             <div className="kanban-board-title"><p>{boardId}</p></div>
                             <div className="kanban-board-detail">
-                                
+                                <div className="kanban-board-countlist">
+                                    <div className="count-with-icon">
+                                        <BsArrowDown className="kanban-board-down-arrow"/>
+                                        <span>{cards.length}</span>
+                                    </div>
+                                    <div className="">  Title</div>
+                                </div>
+                                <div className="banban-board-features">
+                                    <GoPlusCircle className="kanban-board-create-arrow"/>
+                                </div>
                             </div>
                         </div>
                     </div>
