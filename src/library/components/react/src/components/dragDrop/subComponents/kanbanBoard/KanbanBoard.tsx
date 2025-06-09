@@ -128,7 +128,7 @@ export const KanbanBoard = ({
         setIndicator(null);
     };
 
-    const renderBoardContent = (boardId, cards) => {
+    const renderCardContent = (boardId, cards) => {
         if (cards.length === 0) {
             return <div className="no-data-card-container">No Data</div>
         }
@@ -152,7 +152,17 @@ export const KanbanBoard = ({
                         onDragStart={(e) => handleDragStart(e, boardId, card.id)}
                         onDragOver={(e) => handleCardDragOver(e, boardId, i)}
                     >
-                        {card.title}
+                        <div className="kanban-card-left-line"/>
+                        <div className="kanban-card-content">
+                            {/* {card.title} */}
+                            <div className="kanban-card-content-detail">
+                                <div className="card-username-letter"></div>
+                                <div className="card-title"></div>
+                            </div>
+                            <div className="kanban-card-feature-icons">
+
+                            </div>
+                        </div>
                     </div>
                 );
             }
@@ -187,7 +197,7 @@ export const KanbanBoard = ({
                             </div>
                         </div>
                     </div>
-                    {renderBoardContent(boardId, cards)}
+                    {renderCardContent(boardId, cards)}
                 </div>
             ))}
         </div>

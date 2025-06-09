@@ -58,22 +58,22 @@
     align-items: center;
 }
 .count-with-icon{
-    display:inline-flex;      /* 한 줄 + line-height 간섭 없음 */
-    align-items:center;       /* 세로 중앙 */
-    gap:2px;                  /* 아이콘–숫자 간격 (선택) */
+    display:inline-flex;
+    align-items:center;
+    gap:2px;
     margin-right:15px;
     vertical-align: middle;
     span{
-        font-size:13px;           /* 원하는 글자 크기 */
-        line-height:1;            /* leading 0 */
-        display:block;            /* flex item 높이 재계산 */
+        font-size:13px;
+        line-height:1;
+        display:block;
         cursor:pointer;
     }
 }
 .kanban-board-down-arrow{
-    width:1em;                /* 글자 크기 = 아이콘 크기 */
-    height:1em;               /* ★ height도 꼭 지정 */
-    display:block;            /* baseline 여백 제거 */
+    width:1em;
+    height:1em;
+    display:block;
 }
 .kanban-board-create-arrow{
     width: 18px;
@@ -87,13 +87,44 @@
 .sf-kanban-card-container{
     width: 300px;
     height: 150px;
-    padding: 15px;
     background-color: #eeeeee;
     border-top: 0.5px solid #dadada;
     border-bottom: 0.5px solid #dadada;
     box-shadow: 0 2px 4px rgba(0,0,0,0.15);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    display: flex;
+    flex-direction: row;
+    .kanban-card-left-line{
+        width: 3px;
+        height: 100%;
+        background-color: #0f6945;
+    }
 }
+.kanban-card-content{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #b61d1d;
+}
+.kanban-card-content-detail{
+    display: flex;
+    flex: 7;
+    background-color: #bd6f6f;
+    .card-username-letter{
+
+    }
+    .card-title{
+
+    }
+
+}
+.kanban-card-feature-icons{
+    flex: 3;
+    background-color: #4a1010;
+}
+
 .no-data-card-container{
     height: 50px;
     background-color: #ffffff;
