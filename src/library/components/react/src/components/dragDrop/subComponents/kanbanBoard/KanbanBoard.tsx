@@ -2,6 +2,11 @@ import React from "react";
 import { useState, useRef } from "react";
 import { BsArrowDown } from "react-icons/bs";
 import { GoPlusCircle } from "react-icons/go";
+import { IoDocumentTextOutline } from "react-icons/io5";
+import { FiPhone } from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
+
+
 
 import "./kanbanBoard.scss"
 
@@ -160,7 +165,9 @@ export const KanbanBoard = ({
                                 <div className="card-title"></div>
                             </div>
                             <div className="kanban-card-feature-icons">
-
+                                <IoDocumentTextOutline />
+                                <FiPhone />
+                                <HiOutlineMail />
                             </div>
                         </div>
                     </div>
