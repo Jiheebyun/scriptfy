@@ -161,8 +161,16 @@ export const KanbanBoard = ({
                         <div className="kanban-card-content">
                             {/* {card.title} */}
                             <div className="kanban-card-content-detail">
-                                <div className="card-username-letter"></div>
-                                <div className="card-title"></div>
+                                <div className="card-username-letter">
+                                    <span>JH</span>
+                                </div>
+                                <div className="card-content">
+                                    <span className="card-title">
+                                        incorrect product information incorrect product information
+                                    </span>
+                                    <span className="card-priority">high</span>
+                                </div>
+                                
                             </div>
                             <div className="kanban-card-feature-icons">
                                 <IoDocumentTextOutline />
