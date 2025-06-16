@@ -31,9 +31,9 @@ export const KanbanBoard = ({
     layoutColor = '#dadada',
     data = {
         progress: [
-            { id: 'c1', title: 'Login UI' },
-            { id: 'c2', title: 'Auth flow' },
-            { id: 'c3', title: 'Dashboard' },
+            { id: 'c1', title: 'Login UI Login UI Login UI' },
+            { id: 'c2', title: 'Auth flow Auth flow Auth flow' },
+            { id: 'c3', title: 'Dashboard Dashboard Dashboard Dashboard' },
         ],
         hold: [{ id: 'c4', title: 'API Spec' }],
         details: [],
@@ -166,7 +166,7 @@ export const KanbanBoard = ({
                                 </div>
                                 <div className="card-content">
                                     <span className="card-title">
-                                        incorrect product information incorrect product information
+                                        {card.title}
                                     </span>
                                     <span className="card-priority">high</span>
                                 </div>
