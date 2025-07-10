@@ -118,26 +118,27 @@ my-ui-library/
 ## 실행 방법
 
 
-# 1. 의존성 설치
 ```javascript
+# 1. 의존성 설치
 npm install
 ```
-# 2. 데모(프론트엔드) 개발 서버 실행
 ```javascript
+# 2. 데모(프론트엔드) 개발 서버 실행
 npm run start-demo
 ```
-# 3. 데모 빌드
+
 ```javascript
+# 3. 데모 빌드
 npm run build-demo
 ```
 
-# 4. 라이브러리 빌드 (React/Vanilla/Electron)
 ```javascript
+# 4. 라이브러리 빌드 (React/Vanilla/Electron)
 npm run build-library
 ```
 
-# 5. Electron 앱 실행
 ```javascript
+# 5. Electron 앱 실행
 npm run start-electron
 ```
 
