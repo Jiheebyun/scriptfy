@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
 dotenv.config(); // .env 파일에서 환경 변수 로드
+console.log('> MONGO_URI:', process.env.MONGO_URI);
 
 const MONGO_URI = process.env.MONGO_URI || 'your_default_mongodb_uri';
 
