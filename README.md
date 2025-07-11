@@ -141,7 +141,8 @@ npm run build-library
 # 5. Electron 앱 실행
 npm run start-electron
 ```
-
+## 테스트 
+- (추후 테스트 코드 및 실행 방법 추가 예정)
 
 ## Dev Environment 
 
@@ -174,6 +175,8 @@ export default App;
 
 
 ## 문서 
+
+
 
 
 
