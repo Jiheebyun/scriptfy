@@ -147,7 +147,7 @@ npm run start-electron
 ## Dev Environment 
 
 1. Library - React 
-- demo 폴더에는 docs 웹 애플리케이션이 존재합니다. 이 애플리케이션은 미리 설치된 React 라이브러리 모듈인 @scriptify_js/react를 import 하여 사용합니다.
+- demo 폴더에는 docs 웹 애플리케이션이 존재합니다. 이 애플리케이션은 미리 설치된 React 라이브러리 모듈인 @scriptify_js/react를 import 하여 사용합니다. (ES Module(esm), CommonJS(cjs), 타입 정의(.d.ts) 등 다양한 포맷을 지원)
 - docs웹 페이지에서 /dev url로 접근하게되면 모듈을 가져와 확인 또는 개발 할수 있는 환경을 별로도 제공 (해당 페이지를 웹 어플리케이션이 배포할때 제외)
 2. Library - vanilla javascript
 - react와 동일
