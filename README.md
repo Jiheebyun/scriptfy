@@ -163,6 +163,7 @@ import Button from '@scriptify/react-components/Button';
 ```javascript
 
 // 예시: demo/src/App.jsx
+// scriptfy/src/demo/client/src/pages/devEnvironment/devPage.tsx
 import React from 'react';
 import { Button } from '@scriptify_js/react';
 
