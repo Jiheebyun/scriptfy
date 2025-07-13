@@ -141,6 +141,14 @@ npm run build-library
 # 5. Electron 앱 실행
 npm run start-electron
 ```
+
+## 사용 예시 
+```javascript
+import { Button } from '@scriptify/react-components';
+// 또는
+import Button from '@scriptify/react-components/Button';
+```
+
 ## 테스트 
 - (추후 테스트 코드 및 실행 방법 추가 예정)
 
