@@ -149,6 +149,13 @@ import { Button } from '@scriptify/react-components';
 import Button from '@scriptify/react-components/Button';
 ```
 
+## 개발/배포 워크플로우
+
+- **설정/배포**: 루트에서 통합 관리 (`rollup.config.mjs`, `package.json` 등)
+- **개발(HMR/Watch)**: 각 패키지 폴더에서 독립적으로 실행
+- **공통 규칙/의존성**: 루트에서 일관되게 관리
+- **패키지별 빠른 개발 환경**: 각 패키지에서 watch 모드로 즉시 재빌드 가능
+
 ## 테스트 
 - (추후 테스트 코드 및 실행 방법 추가 예정)
 
