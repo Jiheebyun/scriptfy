@@ -155,6 +155,19 @@ import Button from '@scriptify/react-components/Button';
 - **개발(HMR/Watch)**: 각 패키지 폴더에서 독립적으로 실행
 - **공통 규칙/의존성**: 루트에서 일관되게 관리
 - **패키지별 빠른 개발 환경**: 각 패키지에서 watch 모드로 즉시 재빌드 가능
+```javascript
+  ### 패키지별 개발(Watch 모드) 예시
+
+  # React 패키지에서
+  cd src/library/components/react
+  npm install
+  npm run build:rollup -- --watch
+
+  # Vanilla 패키지에서
+  cd src/library/components/vanilla
+  npm install
+  npm run build:rollup -- --watch
+```
 
 ## 테스트 
 - (추후 테스트 코드 및 실행 방법 추가 예정)
